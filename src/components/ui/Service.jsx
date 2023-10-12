@@ -30,7 +30,7 @@ const Service = () => {
                   alt="wedding-image"
                   height={300}
                   width={320}
-                  responsive
+                  responsive="true"
                 ></Image>
               </Link>
             </Col>
@@ -72,7 +72,7 @@ const Service = () => {
                   alt="wedding-image"
                   height={296}
                   width={320}
-                  responsive
+                  responsive="true"
                 ></Image>
               </Link>
             </Col>
@@ -134,7 +134,7 @@ const Service = () => {
                   alt="wedding-image"
                   height={296}
                   width={320}
-                  responsive
+                  responsive="true"
                 ></Image>
               </Link>
             </Col>
@@ -176,7 +176,7 @@ const Service = () => {
                   alt="wedding-image"
                   height={296}
                   width={320}
-                  responsive
+                  responsive="true"
                 ></Image>
               </Link>
             </Col>
