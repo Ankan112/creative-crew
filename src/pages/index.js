@@ -1,3 +1,4 @@
+import RootLayout from "@/components/layout/RootLayout";
 import Contact from "@/components/ui/Contact";
 import FAQ from "@/components/ui/FAQ";
 import Footer from "@/components/ui/Footer";
@@ -11,7 +12,7 @@ import WhyChooseUs from "@/components/ui/WhyChooseUs";
 export default function Home() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <MainBanner />
       <Service />
       <WhyChooseUs />
@@ -19,7 +20,10 @@ export default function Home() {
       <Gallery />
       <FAQ />
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
+Home.getLayout = function getLayout(page) {
+  return <RootLayout>{page}</RootLayout>;
+};

@@ -67,41 +67,39 @@ const Header = () => {
             </Link>
           </div>
           <div className="hidden md:flex md:items-center md:w-fit md:gap-3">
-            <li>
-              <Link href="/">
-                <Image
-                  alt="Logo"
-                  className="w-10 md:w-14 h-10 md:h-14 rounded-full"
-                  src="https://i.ibb.co/Smm15yx/bus-vector.jpg"
-                  decoding="async"
-                  loading="lazy"
-                  width={400}
-                  height={400}
-                />
+            <li className="flex">
+              <Link
+                href="/"
+                className="no-underline font-bold text-black text-lg"
+              >
+                <p>Creative Crew</p>
               </Link>
             </li>
-
-            <Link
-              href="#reserveBus"
-              className="hover:bg-[#f0f0f0] rounded-lg duration-500"
-            >
-              <Button btnName="Reserve Bus" type="primary" styles="py-2 px-3">
-                Login
-              </Button>
-            </Link>
-            <Link href="">
-              {/* <Button btnName="Blogs" styles="py-2 px-3"></Button> */}
-            </Link>
           </div>
           {/* Right side menu */}
           <div className="flex items-center gap-4">
-            <Link href="/login">
-              {/* <Button btnName="Login" styles="py-2 px-3"></Button> */}
-            </Link>
             <div className="relative inline-block text-left">
               <div className="flex justify-center items-center">
                 <Link
-                  href="#reserveBus"
+                  href="/"
+                  className="hover:bg-[orange] font-medium duration-200 mr-5 px-2 py-2 rounded text-black no-underline"
+                >
+                  <p>Home</p>
+                </Link>
+                <Link
+                  href="/about"
+                  className="hover:bg-[orange] font-medium duration-200 mr-5 px-2 py-2 rounded text-black no-underline"
+                >
+                  <p>About Us</p>
+                </Link>
+                <Link
+                  href="/contact"
+                  className="hover:bg-[orange] font-medium duration-200 mr-5 px-2 py-2 rounded text-black no-underline"
+                >
+                  <p className="">Contact Us</p>
+                </Link>
+                <Link
+                  href="/login"
                   className="hover:bg-[#f0f0f0] rounded-lg duration-500"
                 >
                   <Button
@@ -112,7 +110,7 @@ const Header = () => {
                     Login
                   </Button>
                 </Link>
-                <button
+                {/* <button
                   type="button"
                   className="border-gray-800 rounded-full flex items-center justify-center"
                   id="menu-button"
@@ -129,7 +127,7 @@ const Header = () => {
                     width={300}
                     height={300}
                   />
-                </button>
+                </button> */}
               </div>
               {isDropdownOpen && (
                 <div
