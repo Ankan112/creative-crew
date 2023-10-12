@@ -113,10 +113,10 @@ const FAQ = () => {
   };
   return (
     <div className="main-container">
-      <div className="text-center">
+      <div className="text-center my-10">
         <h1>frequently asked questions</h1>
       </div>
-      <Row>
+      <Row gutter={{ lg: 20 }}>
         <Col xs={24} sm={24} md={24} lg={12} span={12}>
           <Collapse
             bordered={false}

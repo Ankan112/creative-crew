@@ -40,6 +40,28 @@ const WhyChooseUs = () => {
                 </div>
               </div>
             </div>
+            <div className="flex justify-between items-center mt-5">
+              <div>
+                <div>icon</div>
+                <div>
+                  <h3>Experience and Expertise</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Impedit, tempora?
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div>icon</div>
+                <div>
+                  <h3>Experience and Expertise</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Impedit, tempora?
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </Col>
       </Row>
