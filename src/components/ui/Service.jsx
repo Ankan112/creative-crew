@@ -23,7 +23,7 @@ const Service = () => {
               md={12}
               span={12}
             >
-              <Link href="/home">
+              <Link href="/category/wedding-photography">
                 <Image
                   className="hover:scale-110 transition duration-700 cursor-pointer object-cover"
                   src={"/download.jpeg"}
@@ -49,7 +49,7 @@ const Service = () => {
                 </p>
                 <MainButton
                   name="Discover More"
-                  link="/home"
+                  link="/category/wedding-photography"
                   style="py-1 px-2 text-lg border-black text-black"
                 />
               </div>
@@ -65,7 +65,7 @@ const Service = () => {
               md={12}
               span={12}
             >
-              <Link href="/home">
+              <Link href="/category/outdoor-photography">
                 <Image
                   className="hover:scale-110 transition duration-700 cursor-pointer object-cover"
                   src={"/download.jpeg"}
@@ -91,7 +91,7 @@ const Service = () => {
                 </p>
                 <MainButton
                   name="Discover More"
-                  link="/home"
+                  link="/category/outdoor-photography"
                   style="py-1 px-2 text-lg border-black text-black"
                 />
               </div>
@@ -115,7 +115,7 @@ const Service = () => {
                 </p>
                 <MainButton
                   name="Discover More"
-                  link="/home"
+                  link="/category/birthday-photography"
                   style="py-1 px-2 text-lg border-black text-black"
                 />
               </div>
@@ -127,7 +127,7 @@ const Service = () => {
               md={12}
               span={12}
             >
-              <Link href="/">
+              <Link href="/category/birthday-photography">
                 <Image
                   className="hover:scale-110 transition duration-700 cursor-pointer object-cover"
                   src={"/download.jpeg"}
@@ -157,7 +157,7 @@ const Service = () => {
                 </p>
                 <MainButton
                   name="Discover More"
-                  link="/home"
+                  link="/category/medendi-photography"
                   style="py-1 px-2 text-lg border-black text-black"
                 />
               </div>
@@ -169,7 +169,7 @@ const Service = () => {
               md={12}
               span={12}
             >
-              <Link href="/">
+              <Link href="/category/mehendi-photography">
                 <Image
                   className="hover:scale-110 transition duration-700 cursor-pointer object-cover"
                   src={"/download.jpeg"}
