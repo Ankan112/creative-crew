@@ -5,10 +5,12 @@ import Link from "next/link";
 
 const Service = () => {
   return (
-    <div className="main-container">
-      <div className="text-center mt-20">
+    <div className="main-container -mt-10">
+      <div className="text-center">
         <h1>What we offer</h1>
-        <h1>Create the stories you want people to remember.</h1>
+        <h1 className="text-4xl w-full md:w-2/3 mx-auto mt-4">
+          Create the stories you want people to remember.
+        </h1>
       </div>
       <Row
         style={{ boxShadow: "0px 0px 60px 0px rgba(0, 0, 0, 0.1)" }}
@@ -26,7 +28,7 @@ const Service = () => {
               <Link href="/category/wedding-photography">
                 <Image
                   className="hover:scale-110 transition duration-700 cursor-pointer object-cover"
-                  src={"/download.jpeg"}
+                  src={"/service1.jpg"}
                   alt="wedding-image"
                   height={300}
                   width={320}
@@ -44,8 +46,8 @@ const Service = () => {
               <div className="p-7">
                 <h1 className="text-2xl font-semibold">Wedding Photography</h1>
                 <p className="text-lg my-4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptates, ducimus!
+                  Every click a timeless memory, every shot a love story
+                  unfolded.
                 </p>
                 <MainButton
                   name="Discover More"
@@ -68,7 +70,7 @@ const Service = () => {
               <Link href="/category/outdoor-photography">
                 <Image
                   className="hover:scale-110 transition duration-700 cursor-pointer object-cover"
-                  src={"/download.jpeg"}
+                  src={"/service2.jpg"}
                   alt="wedding-image"
                   height={296}
                   width={320}
@@ -84,10 +86,10 @@ const Service = () => {
               span={12}
             >
               <div className="p-7">
-                <h1 className="text-2xl font-semibold">Wedding Photography</h1>
+                <h1 className="text-2xl font-semibold">Outdoor Photography</h1>
                 <p className="text-lg my-4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptates, ducimus!
+                  In the heart of every photograph lies the love that binds two
+                  souls.
                 </p>
                 <MainButton
                   name="Discover More"
@@ -108,10 +110,9 @@ const Service = () => {
               span={12}
             >
               <div className="p-7">
-                <h1 className="text-2xl font-semibold">Wedding Photography</h1>
+                <h1 className="text-2xl font-semibold">Birthday Photography</h1>
                 <p className="text-lg my-4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptates, ducimus!
+                  With each click, we etch the timeless tale of love and joy.
                 </p>
                 <MainButton
                   name="Discover More"
@@ -130,7 +131,7 @@ const Service = () => {
               <Link href="/category/birthday-photography">
                 <Image
                   className="hover:scale-110 transition duration-700 cursor-pointer object-cover"
-                  src={"/download.jpeg"}
+                  src={"/service3.jpg"}
                   alt="wedding-image"
                   height={296}
                   width={320}
@@ -150,10 +151,9 @@ const Service = () => {
               span={12}
             >
               <div className="p-7">
-                <h1 className="text-2xl font-semibold">Wedding Photography</h1>
+                <h1 className="text-2xl font-semibold">Mehendi Photography</h1>
                 <p className="text-lg my-4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptates, ducimus!
+                  Each click, a chapter of love written in light and emotion.
                 </p>
                 <MainButton
                   name="Discover More"
@@ -172,7 +172,7 @@ const Service = () => {
               <Link href="/category/mehendi-photography">
                 <Image
                   className="hover:scale-110 transition duration-700 cursor-pointer object-cover"
-                  src={"/download.jpeg"}
+                  src={"/service4.jpg"}
                   alt="wedding-image"
                   height={296}
                   width={320}
