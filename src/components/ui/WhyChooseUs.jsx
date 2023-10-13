@@ -9,11 +9,11 @@ const WhyChooseUs = () => {
         </Col>
         <Col xs={24} sm={24} md={12} lg={16} span={16}>
           <div className="md:px-0 lg:px-10">
-            <h1>Why Choose Us</h1>
-            <p className="text-3xl my-2">
+            <h1 className="font-dancing">Why Choose Us</h1>
+            <p className="text-3xl my-2 font-dancing">
               It is our job to capture the moments that matter.
             </p>
-            <p className="text-base">
+            <p className="text-base font-dancing">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Inventore itaque sunt reiciendis ad quae facere explicabo
               quibusdam, pariatur repellendus minus?

@@ -102,13 +102,13 @@ const Header = () => {
                   href="/login"
                   className="hover:bg-[#f0f0f0] rounded-lg duration-500"
                 >
-                  <Button
+                  {/* <Button
                     btnName="Reserve Bus"
                     type="primary"
                     styles="py-2 px-3"
                   >
                     Login
-                  </Button>
+                  </Button> */}
                 </Link>
                 {/* <button
                   type="button"
