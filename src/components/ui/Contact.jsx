@@ -1,5 +1,3 @@
-import { Button } from "antd";
-import Link from "next/link";
 import MainButton from "../shared/MainButton";
 
 const Contact = () => {
