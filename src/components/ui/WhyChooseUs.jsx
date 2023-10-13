@@ -14,7 +14,7 @@ const WhyChooseUs = () => {
               alt="about"
               height={520}
               width={425}
-              responsive
+              responsive="true"
             ></Image>
           </div>
         </Col>
