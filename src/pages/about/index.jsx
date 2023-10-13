@@ -1,9 +1,10 @@
 import RootLayout from "@/components/layout/RootLayout";
+import WhyChooseUs from "@/components/ui/WhyChooseUs";
 
 const AboutUs = () => {
   return (
     <div>
-      <h1>About us</h1>
+      <WhyChooseUs />
     </div>
   );
 };

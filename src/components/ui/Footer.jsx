@@ -4,6 +4,7 @@ import { TfiTwitter } from "react-icons/tfi";
 import { FaFacebookF } from "react-icons/fa";
 import { BiLogoLinkedin } from "react-icons/bi";
 import Link from "next/link";
+import ScrollToTopButton from "../shared/ScrollToTopButton";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -141,6 +142,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <ScrollToTopButton />
       </footer>
     </div>
   );
