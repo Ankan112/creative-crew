@@ -2,41 +2,41 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Rate } from "antd";
-import { BiSolidUserCircle } from "react-icons/bi";
+import { BiUserCircle } from "react-icons/bi";
 
 const reviewData = [
   {
     review:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, omnis quas. Id placeat eius rerum velit ad saep laboriosam sunt!",
-    name: "Terry Hang",
+      "Exceeded expectations - photos were breathtakingly beautiful and truly captured our joy.",
+    name: "Rana Hassan",
     designation: "Traveler",
     ratings: 5,
   },
   {
     review:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, omnis quas. Id placeat eius rerum velit ad saep laboriosam sunt!",
+      "Thrilled with the exceptional quality of our photos, the attention to detail, and the ability to truly capture our special moments. We couldn't be happier with the results!",
     name: "Luci Jeny",
     designation: "Businessman",
     ratings: 3.5,
   },
   {
     review:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, omnis quas. Id placeat eius rerum velit ad saep laboriosam sunt!",
-    name: "Samu Fika",
+      "Exceptional service! Their attention to detail and ability to capture genuine emotions exceeded our expectations.",
+    name: "Tina",
     designation: "Traveler",
     ratings: 4,
   },
   {
     review:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, omnis quas. Id placeat eius rerum velit ad saep laboriosam sunt!",
+      "Exceptional photography that perfectly captured our moments. Highly professional and a joy to work with.",
     name: "Mick Lrsa",
     designation: "Singer",
     ratings: 4.5,
   },
   {
     review:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, omnis quas. Id placeat eius rerum velit ad saep laboriosam sunt!",
-    name: "Tom Herry",
+      "Their work exceeded our expectations, truly capturing the magic of our special day.",
+    name: "Jack Moch",
     designation: "Designer",
     ratings: 5,
   },
@@ -84,19 +84,21 @@ const Testimonial = () => {
     <div className="main-container">
       <div className="text-center">
         <h1>Testimonial</h1>
-        <h1>Client Feedback</h1>
+        <h1 className="text-4xl w-full md:w-2/3 mx-auto mt-4">
+          What our clients say about us.
+        </h1>
       </div>
       <div className="px-2 md:px-0">
         <Slider {...settings}>
           {reviewData.map((data, index) => (
             <div key={index}>
               <div className="shadow-xl my-10 md:mx-4 h-64 rounded-xl p-8">
-                <p>{data?.review}</p>
+                <p className="h-24 text-medium ">{data?.review}</p>
 
                 <Rate disabled allowHalf defaultValue={data?.ratings} />
                 <div className="flex items-center mt-4">
                   <div>
-                    <BiSolidUserCircle size={48}></BiSolidUserCircle>
+                    <BiUserCircle size={48}></BiUserCircle>
                   </div>
                   <div className="ml-5">
                     <h3 className="font-medium secondary-text">{data?.name}</h3>
