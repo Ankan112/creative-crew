@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div className="main-container my-14">
       <div
-        className="text-center bg-no-repeat bg-cover bg-center rounded-tr-[78px] rounded-bl-[78px] text-white py-20"
+        className="text-center bg-no-repeat bg-cover bg-center rounded-tr-[78px] bg-fixed rounded-bl-[78px] text-white py-20"
         style={{
           background:
             "linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/contact.jpg')",

@@ -3,21 +3,21 @@ import { SiInstagram } from "react-icons/si";
 import { TfiTwitter } from "react-icons/tfi";
 import { FaFacebookF } from "react-icons/fa";
 import { BiLogoLinkedin } from "react-icons/bi";
+import Link from "next/link";
 
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <div className="secondary-bg mt-10">
+    <div className="bg-[#2F3137] mt-10">
       <footer className="main-container relative pt-8 pb-6">
         <div className="container mx-auto">
           <div className="flex flex-wrap text-left lg:text-left">
             <div className="w-full lg:w-6/12">
-              <h4 className="text-3xl font-semibold text-gray-900">
+              <h4 className="text-3xl font-semibold text-white">
                 Creative Crew
               </h4>
-              <h5 className="text-lg mt-0 mb-2 text-gray-800">
-                Bus Authority has the right to cancel any bus schedule at any
-                time.
+              <h5 className="text-lg mt-0 mb-2 text-white">
+                Capturing Moments, Creating Memories.
               </h5>
               <div className="mt-6 lg:mb-0 mb-6 flex">
                 <button
@@ -49,80 +49,80 @@ const Footer = () => {
             <div className="w-full lg:w-6/12">
               <div className="flex flex-wrap items-top mb-6">
                 <div className="w-full lg:w-4/12 px-4 ml-auto">
-                  <span className="block uppercase text-gray-800 text-sm font-bold mb-2">
+                  <span className="block uppercase text-white text-sm font-bold mb-2">
                     Useful Links
                   </span>
-                  <ul className="list-unstyled">
+                  <ul className="list-unstyled list-none">
                     <li>
-                      <a
-                        className="text-gray-700 font-semibold block pb-2 text-sm"
-                        href="/about-us"
+                      <Link
+                        className="text-white font-semibold block pb-2 text-sm"
+                        href="/about"
                       >
                         About Us
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       <a
-                        className="text-gray-700 font-semibold block pb-2 text-sm"
-                        href="/blog"
+                        className="text-white font-semibold block pb-2 text-sm"
+                        href="#"
                       >
                         Blog
                       </a>
                     </li>
                     <li>
                       <a
-                        className="text-gray-700 font-semibold block pb-2 text-sm"
-                        href="/bus"
+                        className="text-white font-semibold block pb-2 text-sm"
+                        href="#"
                       >
-                        Bus
+                        Service
                       </a>
                     </li>
                     <li>
                       <a
-                        className="text-gray-700 font-semibold block pb-2 text-sm"
-                        href="/reserve-bus"
+                        className="text-white font-semibold block pb-2 text-sm"
+                        href="#"
                       >
-                        Reserve Bus
+                        Home
                       </a>
                     </li>
                   </ul>
                 </div>
                 <div className="w-full lg:w-4/12 px-4">
-                  <span className="block uppercase text-gray-800 text-sm font-bold mb-2">
+                  <span className="block uppercase text-white text-sm font-bold mb-2">
                     Other Resources
                   </span>
-                  <ul className="list-unstyled">
+                  <ul className="list-unstyled list-none">
                     <li>
-                      <a
-                        className="text-gray-700 font-semibold block pb-2 text-sm"
+                      <Link
+                        className="text-white font-semibold block pb-2 text-sm"
                         href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile"
                       >
                         Our License
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        className="text-gray-700 font-semibold block pb-2 text-sm"
+                      <Link
+                        className="text-white font-semibold block pb-2 text-sm"
                         href="https://creative-tim.com/terms?ref=njs-profile"
                       >
                         Terms &amp; Conditions
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        className="text-gray-700 font-semibold block pb-2 text-sm"
+                      <Link
+                        className="text-white font-semibold block pb-2 text-sm"
                         href="https://creative-tim.com/privacy?ref=njs-profile"
                       >
                         Privacy Policy
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        className="text-gray-700 font-semibold block pb-2 text-sm"
+                      <Link
+                        className="text-white font-semibold block pb-2 text-sm"
                         href="https://creative-tim.com/contact-us?ref=njs-profile"
                       >
                         Contact Us
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -131,8 +131,8 @@ const Footer = () => {
           </div>
           <hr className="my-6 border-blueGray-300" />
           <div className="flex flex-wrap items-center md:justify-between justify-center">
-            <div className="w-full md:w-4/12 px-4 mx-auto text-center">
-              <div className="text-sm text-gray-700 font-semibold py-1">
+            <div className="w-full md:w-6/12 px-4 mx-auto text-center">
+              <div className="text-sm text-white font-semibold py-1">
                 <span id="get-current-year">
                   All Rights Reserved &copy; {year} Creative Crew Online
                   Service.
