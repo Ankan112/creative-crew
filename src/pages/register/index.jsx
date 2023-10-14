@@ -1,9 +1,9 @@
 import Header from "@/components/ui/Header";
-import { Button } from "antd";
+import { Button, Checkbox } from "antd";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
 
-const LoginPage = () => {
+const RegisterPage = () => {
   const {
     register,
     formState: { errors },
@@ -14,6 +14,7 @@ const LoginPage = () => {
     console.log(data);
     reset();
   };
+
   return (
     <div className="bg-gray-200">
       <Header />
@@ -21,14 +22,44 @@ const LoginPage = () => {
         <div className="w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
           <div className="px-6 py-4">
             <h3 className="mt-3 text-xl font-medium text-center text-gray-600 dark:text-gray-200">
-              Welcome Back
+              Welcome To Creative Crew
             </h3>
 
             <p className="mt-1 text-center text-gray-500 dark:text-gray-400">
-              Please Login
+              Please Register Now
             </p>
 
             <form onSubmit={handleSubmit(onSubmit)}>
+              <div className="w-full mt-4">
+                <input
+                  className="block w-full px-4 py-4 mt-2 text-gray-700 placeholder-gray-500 bg-white border rounded-lg dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring focus:ring-blue-300"
+                  type="text"
+                  placeholder="Full Name"
+                  aria-label="Full Name"
+                  {...register("fullName", { required: true })}
+                  aria-invalid={errors.fullName ? "true" : "false"}
+                />
+                {errors.fullName?.type === "required" && (
+                  <p className="text-red-600 mt-2" role="alert">
+                    Full Name is required*
+                  </p>
+                )}
+              </div>
+              <div className="w-full mt-4">
+                <input
+                  className="block w-full px-4 py-4 mt-2 text-gray-700 placeholder-gray-500 bg-white border rounded-lg dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring focus:ring-blue-300"
+                  type="number"
+                  placeholder="Phone Number"
+                  aria-label="Phone Number"
+                  {...register("phone", { required: true })}
+                  aria-invalid={errors.phone ? "true" : "false"}
+                />
+                {errors.phone?.type === "required" && (
+                  <p className="text-red-600 mt-2" role="alert">
+                    Phone Number is required*
+                  </p>
+                )}
+              </div>
               <div className="w-full mt-4">
                 <input
                   className="block w-full px-4 py-4 mt-2 text-gray-700 placeholder-gray-500 bg-white border rounded-lg dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring focus:ring-blue-300"
@@ -64,15 +95,10 @@ const LoginPage = () => {
               </div>
 
               <div className="flex items-center justify-between mt-4">
-                <a
-                  href="#"
-                  className="text-sm text-gray-600 dark:text-gray-200 hover:text-gray-500"
-                >
-                  Forget Password?
-                </a>
+                <Checkbox className="underline">Terms & Conditions</Checkbox>
 
                 <Button size="large" htmlType="submit" type="primary">
-                  Log In
+                  Register
                 </Button>
               </div>
             </form>
@@ -80,14 +106,14 @@ const LoginPage = () => {
 
           <div className="flex items-center justify-center py-4 text-center bg-gray-50 dark:bg-gray-700">
             <span className="text-sm text-gray-600 dark:text-gray-200">
-              Don&#39;t have an account?{" "}
+              Already have an account?{" "}
             </span>
 
             <Link
-              href="/register"
+              href="/login"
               className="mx-2 text-sm font-bold text-blue-500 dark:text-blue-400 hover:underline"
             >
-              Register
+              Log In
             </Link>
           </div>
         </div>
@@ -96,4 +122,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default RegisterPage;
