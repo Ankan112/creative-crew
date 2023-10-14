@@ -1,3 +1,4 @@
+import RootLayout from "@/components/layout/RootLayout";
 import PackageCard from "@/components/shared/PackageCard";
 
 const CategoryName = () => {
@@ -23,3 +24,7 @@ const CategoryName = () => {
 };
 
 export default CategoryName;
+
+CategoryName.getLayout = function getLayout(page) {
+  return <RootLayout>{page}</RootLayout>;
+};
