@@ -5,10 +5,18 @@ const CategoryName = () => {
   return (
     <div className="mb-10">
       <div
-        class="flex items-center bg-no-repeat bg-cover h-[50vh]"
-        style={{ backgroundImage: 'url("/download.jpeg")' }}
+        class="flex items-center bg-no-repeat bg-cover bg-center h-[50vh]"
+        style={{
+          backgroundImage:
+            'linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/p4.jpg")',
+        }}
       >
-        <h1 className="ml-20">Wedding Photography</h1>
+        <div className="main-container text-white">
+          <h1 className=" mb-3">Wedding Photography</h1>
+          <p>
+            Capturing Moments, Crafting Memories <br /> Your Vision, Our Lens
+          </p>
+        </div>
       </div>
       <div className="main-container">
         <div className="text-center my-10">

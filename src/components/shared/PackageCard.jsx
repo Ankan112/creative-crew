@@ -1,5 +1,6 @@
 import { categories } from "@/constant";
 import MainButton from "./MainButton";
+import { BsCamera } from "react-icons/bs";
 
 const PackageCard = () => {
   return (
@@ -8,21 +9,24 @@ const PackageCard = () => {
         {categories?.map((category, index) => (
           <div
             key={index}
-            className="text-center border border-solid border-black px-6 py-3"
+            className="text-center shadow-xl border border-solid border-gray-200 p-10"
           >
-            <h1 className="font-semibold text-3xl">{category.package}</h1>
-            <p className="text-4xl font-bold"> {category.price}</p>
-            <div className="text-lg font-medium">
-              <p>{category.duration}</p>
-              <hr />
-              <p>{category.services.photographer}</p>
-              <hr />
-              <p>{category.services.consultation}</p>
-              <hr />
-              <p>{category.services.images}</p>
-              <hr />
-              <p>{category.services.gallery}</p>
-              <hr />
+            <div className="h-14 w-16 flex bg-white justify-center items-center border- border-solid border-gray-500 mx-auto ">
+              <BsCamera size={40} />
+            </div>
+            <h1 className="font-semibold text-xl mt-3">{category.package}</h1>
+            <p className="text-4xl font-medium mt-3"> {category.price}</p>
+            <div className="text-lg font-medium mt-5">
+              <p className="mb-2">{category.duration}</p>
+              <hr className="border border-solid border-gray-300" />
+              <p className="my-2">{category.services.photographer}</p>
+              <hr className="border border-solid border-gray-300" />
+              <p className="my-2">{category.services.consultation}</p>
+              <hr className="border border-solid border-gray-300" />
+              <p className="my-2">{category.services.images}</p>
+              <hr className="border border-solid border-gray-300" />
+              <p className="my-2">{category.services.gallery}</p>
+              <hr className="border border-solid border-gray-300" />
             </div>
             <div className="mt-8">
               <MainButton

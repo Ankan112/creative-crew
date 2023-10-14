@@ -26,7 +26,7 @@ export const categories = [
     price: "$ 1000",
     duration: "12 hours of coverage",
     services: {
-      photographer: "Four Professional Photographer",
+      photographer: "4 Professional Photographer",
       consultation: "Pre-wedding consultation",
       images: "High Resolution digital images",
       gallery: "Online Gallery for easy sharing and downloading",
