@@ -98,17 +98,8 @@ const Header = () => {
                 >
                   <p className="">Contact Us</p>
                 </Link>
-                <Link
-                  href="/login"
-                  className="hover:bg-[#f0f0f0] rounded-lg duration-500"
-                >
-                  {/* <Button
-                    btnName="Reserve Bus"
-                    type="primary"
-                    styles="py-2 px-3"
-                  >
-                    Login
-                  </Button> */}
+                <Link href="/login">
+                  <Button type="primary">Login</Button>
                 </Link>
                 {/* <button
                   type="button"
