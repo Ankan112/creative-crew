@@ -101,9 +101,9 @@ const Header = () => {
                 <Link href="/login">
                   <Button type="primary">Login</Button>
                 </Link>
-                {/* <button
+                <button
                   type="button"
-                  className="border-gray-800 rounded-full flex items-center justify-center"
+                  className="border-gray-800 rounded-full flex items-center justify-center ml-5"
                   id="menu-button"
                   aria-expanded={isDropdownOpen}
                   aria-haspopup="true"
@@ -118,7 +118,7 @@ const Header = () => {
                     width={300}
                     height={300}
                   />
-                </button> */}
+                </button>
               </div>
               {isDropdownOpen && (
                 <div
@@ -139,31 +139,31 @@ const Header = () => {
                       Dashboard
                     </Link>
                     <Link
-                      href="/user-dashboard"
+                      href="/user-information"
                       className="text-gray-600 hover:bg-[#f3f4f9] block px-4 py-2 text-base duration-300"
                       role="menuitem"
                       tabIndex="-1"
                       id="menu-item-0"
                     >
-                      User Dashboard
+                      User Information
                     </Link>
                     <Link
-                      href=""
+                      href="/booking-history"
                       className="text-gray-600 hover:bg-[#f3f4f9] block px-4 py-2 text-base duration-300"
                       role="menuitem"
                       tabIndex="-1"
                       id="menu-item-0"
                     >
-                      Blogs
+                      Booking History
                     </Link>
                     <Link
-                      href="#reserveBus"
+                      href="/payment"
                       className="text-gray-600 hover:bg-[#f3f4f9] block px-4 py-2 text-base duration-300"
                       role="menuitem"
                       tabIndex="-1"
                       id="menu-item-0"
                     >
-                      Reserve Bus
+                      Payment
                     </Link>
                     <Link
                       href="#"
@@ -172,7 +172,7 @@ const Header = () => {
                       tabIndex="-1"
                       id="menu-item-0"
                     >
-                      Sign out
+                      Log Out
                     </Link>
                   </div>
                 </div>
