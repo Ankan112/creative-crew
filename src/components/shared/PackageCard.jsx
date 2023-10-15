@@ -1,8 +1,9 @@
-import { categories } from "@/constant";
+import { categories, getUser } from "@/constant";
 import MainButton from "./MainButton";
 import { BsCamera } from "react-icons/bs";
 
 const PackageCard = () => {
+  const data = getUser();
   return (
     <div>
       <div className="flex flex-col md:flex-row justify-between items-center gap-5">
@@ -31,7 +32,7 @@ const PackageCard = () => {
             <div className="mt-8">
               <MainButton
                 name="Get Started"
-                link="/order"
+                link={`${!!data?.email ? "/order" : "/login"}`}
                 style="py-2 px-8 text-lg"
               ></MainButton>
             </div>

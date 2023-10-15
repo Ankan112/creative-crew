@@ -3,14 +3,7 @@ import { Modal, Space, Table, Tag, message } from "antd";
 import { EditOutlined } from "@ant-design/icons";
 import MainModal from "@/components/shared/Modal";
 import { useState } from "react";
-
-const data = [
-  {
-    name: "Ankan Halder",
-    phone: "01904727185",
-    email: "ankanhalder112@gamil.com",
-  },
-];
+import { getUser } from "@/constant";
 
 const UserInformation = () => {
   const columns = [
@@ -69,6 +62,8 @@ const UserInformation = () => {
   const handleCancel = () => {
     setIsModalOpen(false);
   };
+  const user = getUser();
+  const data = [user];
   return (
     <>
       {contextHolder}
