@@ -33,3 +33,12 @@ export const categories = [
     },
   },
 ];
+
+export function getUser() {
+  if (typeof window !== "undefined") {
+    const storedJsonString = localStorage.getItem("user");
+    const result = JSON.parse(storedJsonString);
+    return result;
+  }
+  return null;
+}
