@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
 
 const Header = () => {
   const router = useRouter();
@@ -160,4 +161,5 @@ const Header = () => {
   );
 };
 
-export default Header;
+// export default Header;
+export default dynamic(() => Promise.resolve(Header), { ssr: false });
