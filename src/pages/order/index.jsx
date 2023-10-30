@@ -129,14 +129,19 @@ const Order = () => {
             </form>
           </div>
           <div className="w-full md:w-1/2">
-            <h2 className="text-4xl mb-5">
+            <h2 className="text-5xl mb-5">
               Make Your Booking <br /> With Joy!
             </h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit est
-              consequuntur ad deserunt voluptatem cumque numquam suscipit, totam
-              fugiat distinctio tenetur, accusamus deleniti mollitia quasi error
-              ut, rerum quod quam!
+            <p className="opacity-80">
+              Thank you for choosing Creative Crew Photography to capture your
+              special moments! Your booking has been confirmed with just one
+              click. Our talented team of photographers is excited to bring your
+              vision to life and create beautiful memories for you. Get ready
+              for a memorable experience, and we can&apos;t wait to share your
+              journey with us. If you have any specific details or requests,
+              feel free to reach out, and we&apos;ll ensure everything is
+              perfect for your photo session. Get ready to shine in front of our
+              lenses!
             </p>
           </div>
         </div>
