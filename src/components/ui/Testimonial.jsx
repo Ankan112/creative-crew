@@ -93,7 +93,7 @@ const Testimonial = () => {
           {reviewData.map((data, index) => (
             <div key={index}>
               <div className="border border-solid border-gray-200 shadow-md my-10 md:mx-4 h-64 rounded-xl p-8">
-                <div className="text-center mt-4">
+                <div className="text-center">
                   <div>
                     <PiUserCircleThin size={48}></PiUserCircleThin>
                   </div>

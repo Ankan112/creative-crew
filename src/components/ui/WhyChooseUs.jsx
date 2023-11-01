@@ -12,7 +12,7 @@ const WhyChooseUs = () => {
             <Image
               src="/about2.jpg"
               alt="about"
-              height={520}
+              height={550}
               width={425}
               responsive="true"
             ></Image>
@@ -20,9 +20,9 @@ const WhyChooseUs = () => {
         </Col>
         <Col xs={24} sm={24} md={24} lg={16} span={16}>
           <div className="md:px-0 lg:px-10">
-            <div>
-              <h1>Why Choose Us</h1>
-              <h1 className="text-4xl my-4">
+            <div className="">
+              <h1 className="">Why Choose Us</h1>
+              <h1 className="text-4xl my-4 ">
                 It is our job to capture the moments that matter.
               </h1>
             </div>
