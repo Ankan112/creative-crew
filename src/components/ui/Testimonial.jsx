@@ -2,7 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Rate } from "antd";
-import { BiUserCircle } from "react-icons/bi";
+import { PiUserCircleThin } from "react-icons/pi";
 
 const reviewData = [
   {
@@ -14,7 +14,7 @@ const reviewData = [
   },
   {
     review:
-      "Thrilled with the exceptional quality of our photos, the attention to detail, and the ability to truly capture our special moments. We couldn't be happier with the results!",
+      "Thrilled with the exceptional quality of our photos, the attention to detail, and the ability to truly capture our special moments.",
     name: "Luci Jeny",
     designation: "Businessman",
     ratings: 3.5,
@@ -92,19 +92,20 @@ const Testimonial = () => {
         <Slider {...settings}>
           {reviewData.map((data, index) => (
             <div key={index}>
-              <div className="shadow-xl my-10 md:mx-4 h-64 rounded-xl p-8">
-                <p className="h-24 text-medium ">{data?.review}</p>
-
-                <Rate disabled allowHalf defaultValue={data?.ratings} />
-                <div className="flex items-center mt-4">
+              <div className="border border-solid border-gray-200 shadow-md my-10 md:mx-4 h-64 rounded-xl p-8">
+                <div className="text-center mt-4">
                   <div>
-                    <BiUserCircle size={48}></BiUserCircle>
+                    <PiUserCircleThin size={48}></PiUserCircleThin>
                   </div>
-                  <div className="ml-5">
+                  <div className="">
                     <h3 className="font-medium secondary-text">{data?.name}</h3>
                     <h6 className="opacity-80 text-sm">{data?.designation}</h6>
                   </div>
+                  <div className="my-2">
+                    <Rate disabled allowHalf defaultValue={data?.ratings} />
+                  </div>
                 </div>
+                <p className="h-24 text-center text-medium ">{data?.review}</p>
               </div>
             </div>
           ))}
