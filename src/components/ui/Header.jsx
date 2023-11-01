@@ -1,10 +1,13 @@
 import { getUser } from "@/constant";
-import { Button } from "antd";
+import { Button, Tooltip } from "antd";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
+import MainButton from "../shared/MainButton";
+import { AiOutlineLogout } from "react-icons/ai";
+import { MdOutlineCamera } from "react-icons/md";
 
 const Header = () => {
   const router = useRouter();
@@ -33,18 +36,21 @@ const Header = () => {
           <div className="inherit md:hidden">
             <Link
               href="/"
-              className="no-underline font-bold text-black text-lg"
+              className="no-underline flex items-center font-bold text-black text-lg"
             >
-              <p>Creative Crew</p>
+              <MdOutlineCamera size={30} />
             </Link>
           </div>
           <div className="hidden md:flex md:items-center md:w-fit md:gap-3">
             <li className="flex">
               <Link
                 href="/"
-                className="no-underline font-bold text-black text-lg"
+                className="no-underline font-semibold text-black text-xl"
               >
-                <p>Creative Crew</p>
+                <div className="flex justify-center items-center">
+                  <MdOutlineCamera size={30} />
+                  <p className="ml-2">Creative Crew</p>
+                </div>
               </Link>
             </li>
           </div>
@@ -71,11 +77,36 @@ const Header = () => {
                   <p className="">Contact Us</p>
                 </Link>
                 {!data?.email && (
+                  <MainButton
+                    name="Login"
+                    link="/login"
+                    style="py-1 px-4 text-base"
+                  />
+                )}
+                {!!data?.email && (
+                  <>
+                    <MainButton
+                      name="Dashboard"
+                      link="/dashboard"
+                      style="py-1 px-4 text-base"
+                    />
+                    <Tooltip placement="bottomRight" title="Logout">
+                      <button
+                        onClick={handleSignOut}
+                        className="ml-5 text-black border-none cursor-pointer bg-transparent"
+                      >
+                        <AiOutlineLogout size={24}></AiOutlineLogout>
+                      </button>
+                    </Tooltip>
+                  </>
+                )}
+
+                {/* {!data?.email && (
                   <Link href="/login">
                     <Button type="primary">Login</Button>
                   </Link>
-                )}
-                {!!data?.email && (
+                )} */}
+                {/* {!!data?.email && (
                   <button
                     type="button"
                     className="border-gray-800 rounded-full flex items-center justify-center ml-5"
@@ -94,9 +125,9 @@ const Header = () => {
                       height={300}
                     />
                   </button>
-                )}
+                )} */}
               </div>
-              {isDropdownOpen && (
+              {/* {isDropdownOpen && (
                 <div
                   className="absolute right-0 z-50 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-green-500 ring-opacity-5 focus:outline-none"
                   role="menu"
@@ -152,7 +183,7 @@ const Header = () => {
                     </p>
                   </div>
                 </div>
-              )}
+              )} */}
             </div>
           </div>
         </div>
