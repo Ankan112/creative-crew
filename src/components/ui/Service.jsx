@@ -39,7 +39,7 @@ const Service = () => {
   return (
     <div className="main-container -mt-10">
       <div className="text-center">
-        <h1>What we offer</h1>
+        <h1 className="font-dancing">What we offer</h1>
         <h1 className="text-4xl w-full md:w-2/3 mx-auto mt-4">
           Create the stories you want people to remember.
         </h1>
@@ -85,8 +85,10 @@ const Service = () => {
                 span={12}
               >
                 <div className="p-7">
-                  <h1 className="text-2xl font-semibold">{data.title}</h1>
-                  <p className="text-lg my-4">{data.description}</p>
+                  <h1 className="text-2xl font-main font-semibold">
+                    {data.title}
+                  </h1>
+                  <p className="text-lg font-main my-4">{data.description}</p>
                   <MainButton
                     name="Discover More"
                     link={`/category/${data.path}`}

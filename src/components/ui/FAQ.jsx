@@ -113,11 +113,12 @@ const FAQ = () => {
     border: "none",
     fontSize: "18px",
     fontWeight: 600,
+    fontFamily: "'Share', sans-serif",
   };
   return (
     <div className="main-container mt-20">
       <div className="text-center mb-10">
-        <h1>FAQ</h1>
+        <h1 className="font-dancing">FAQ</h1>
         <h1 className="text-4xl w-full md:w-2/3 mx-auto mt-4">
           Most Asked Questions
         </h1>

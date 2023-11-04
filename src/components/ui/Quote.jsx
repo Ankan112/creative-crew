@@ -13,7 +13,7 @@ const Quote = () => {
         <div>
           <BsCamera size={56} />
         </div>
-        <h1 className="w-full md:w-2/3 mx-auto my-8">
+        <h1 className="w-full md:w-2/3 mx-auto my-8 ">
           It Captures special events and turns them into precious keepsakes.
         </h1>
         <MainButton

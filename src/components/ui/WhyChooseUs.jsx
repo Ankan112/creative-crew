@@ -21,18 +21,18 @@ const WhyChooseUs = () => {
         <Col xs={24} sm={24} md={24} lg={16} span={16}>
           <div className="md:px-0 lg:px-10">
             <div className="">
-              <h1 className="">Why Choose Us</h1>
-              <h1 className="text-4xl my-4 ">
+              <h1 className="font-dancing">Why Choose Us</h1>
+              <h1 className="text-4xl font-main my-4 ">
                 It is our job to capture the moments that matter.
               </h1>
             </div>
-            <p className="text-base font-medium">
+            <p className="text-base font-medium font-main">
               We are the storytellers behind the lens, crafting memories that
               echo laughter and love. With passion as our guide and creativity
               as our canvas, we freeze time in a frame, narrating tales of
               shared journeys and endless devotion.
             </p>
-            <div className="flex flex-col md:flex-row justify-between gap-4 items-center mt-5">
+            <div className="flex flex-col md:flex-row justify-between gap-4 items-center font-main mt-5">
               <div className="w-full md:w-1/2">
                 <div className="h-[50px] w-[50px] border-2 border-solid border-black flex justify-center items-center">
                   <GrUserExpert size={36} className="p-1" />
@@ -58,7 +58,7 @@ const WhyChooseUs = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col md:flex-row justify-between gap-4 items-center mt-5">
+            <div className="flex flex-col md:flex-row justify-between gap-4 items-center mt-5 font-main">
               <div className="w-full md:w-1/2">
                 <div className="h-[50px] w-[50px] border-2 border-solid border-black flex justify-center items-center">
                   <BiCustomize size={36} className="p-1" />

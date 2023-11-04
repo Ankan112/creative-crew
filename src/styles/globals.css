@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Share:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Share:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
 
 *{
     margin: 0;
@@ -13,6 +15,7 @@
 
 body{
     font-family: 'Share', sans-serif
+
 }
 
 .main-container{
@@ -20,7 +23,9 @@ body{
     max-width: 1280px;
     margin: 0 auto;
 }
-
+.font-main{
+    font-family: 'Share', sans-serif
+}
 .font-dancing{
     font-family: 'Dancing Script', cursive;
 }

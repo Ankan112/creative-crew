@@ -10,7 +10,7 @@ const Contact = () => {
             "linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/contact.jpg')",
         }}
       >
-        <h1 className="text-4xl">Still, have a question?</h1>
+        <h1 className="text-4xl font-dancing">Still, have a question?</h1>
         <p className="my-8 w-3/4 md:w-2/4 mx-auto">
           If your query isn&#39;t addressed here, feel free to reach out to us
           directly for personalized assistance. Your satisfaction is our

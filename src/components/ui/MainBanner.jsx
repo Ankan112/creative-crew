@@ -26,7 +26,9 @@ const MainBanner = () => {
         </div>
         <div className="w-full md:w-1/2 lg:w-1/3 text-center">
           <h1 className="text-5xl">6+</h1>
-          <span className="font-semibold">Years of experience</span>
+          <span className="font-semibold font-dancing">
+            Years of experience
+          </span>
         </div>
       </div>
     </div>
