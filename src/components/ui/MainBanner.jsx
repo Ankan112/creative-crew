@@ -5,19 +5,20 @@ const MainBanner = () => {
     <div className="overflow-hidden">
       <Carousel
         autoplay="true"
+        dots="false"
         dotPosition="right"
         effect="fade"
-        className=" text-black"
+        className=" text-black h-[80vh]"
         style={{
           backgroundImage:
             "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))",
         }}
       >
-        <div className="h-screen flex justify-center items-center bg-cover bg-no-repeat bg-center text-white text-center bg-[url('/banner1.jpg')]"></div>
-        <div className="h-screen flex justify-center items-center bg-cover bg-no-repeat bg-center text-white text-center bg-[url('/banner2.jpg')]"></div>
-        <div className="h-screen flex justify-center items-center bg-cover bg-no-repeat bg-center text-white text-center bg-[url('/banner3.jpg')]"></div>
-        <div className="h-screen flex justify-center items-center bg-cover bg-no-repeat bg-center text-white text-center bg-[url('/banner4.jpg')]"></div>
-        <div className="h-screen flex justify-center items-center bg-cover bg-no-repeat bg-center text-white text-center bg-[url('/banner5.jpg')]"></div>
+        <div className="h-[80vh] flex justify-center items-center bg-cover bg-no-repeat bg-center text-white text-center bg-[url('/banner1.jpg')]"></div>
+        <div className="h-[80vh] flex justify-center items-center bg-cover bg-no-repeat bg-center text-white text-center bg-[url('/banner2.jpg')]"></div>
+        <div className="h-[80vh] flex justify-center items-center bg-cover bg-no-repeat bg-center text-white text-center bg-[url('/banner3.jpg')]"></div>
+        <div className="h-[80vh] flex justify-center items-center bg-cover bg-no-repeat bg-center text-white text-center bg-[url('/banner4.jpg')]"></div>
+        <div className="h-[80vh] flex justify-center items-center bg-cover bg-no-repeat bg-center text-white text-center bg-[url('/banner5.jpg')]"></div>
       </Carousel>
       <div className="flex flex-col md:flex-row justify-between bg-[#2F3137] text-white main-container md:w-2/3 px-10 py-12 rounded-xl -top-24 relative">
         <div className="w-full md:w-1/2 lg:w-2/3 flex">
