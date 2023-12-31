@@ -32,8 +32,8 @@ const WhyChooseUs = () => {
               as our canvas, we freeze time in a frame, narrating tales of
               shared journeys and endless devotion.
             </p>
-            <div className="flex flex-col md:flex-row justify-between gap-4 items-center font-main mt-5">
-              <div className="w-full md:w-1/2">
+            <div className="flex flex-col md:flex-row justify-between gap-4 items-center font-main mt-8">
+              <div className="w-full md:w-1/2 border border-solid border-gray-300 shadow p-4 ">
                 <div className="h-[50px] w-[50px] border-2 border-solid border-black flex justify-center items-center">
                   <GrUserExpert size={36} className="p-1" />
                 </div>
@@ -45,7 +45,7 @@ const WhyChooseUs = () => {
                   </p>
                 </div>
               </div>
-              <div className="w-full md:w-1/2">
+              <div className="w-full md:w-1/2 border border-solid border-gray-300 shadow p-4 ">
                 <div className="h-[50px] w-[50px] border-2 border-solid border-black flex justify-center items-center">
                   <BiLogoReact size={36} className="p-1" />
                 </div>
@@ -59,7 +59,7 @@ const WhyChooseUs = () => {
               </div>
             </div>
             <div className="flex flex-col md:flex-row justify-between gap-4 items-center mt-5 font-main">
-              <div className="w-full md:w-1/2">
+              <div className="w-full md:w-1/2 border border-solid border-gray-300 shadow p-4 ">
                 <div className="h-[50px] w-[50px] border-2 border-solid border-black flex justify-center items-center">
                   <BiCustomize size={36} className="p-1" />
                 </div>
@@ -71,7 +71,7 @@ const WhyChooseUs = () => {
                   </p>
                 </div>
               </div>
-              <div className="w-full md:w-1/2">
+              <div className="w-full md:w-1/2 border border-solid border-gray-300 shadow p-4 ">
                 <div className="h-[50px] w-[50px] border-2 border-solid border-black flex justify-center items-center">
                   <BiSupport size={36} className="p-1" />
                 </div>
