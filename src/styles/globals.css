@@ -11,6 +11,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   text-decoration: none;
+}
+
+li{
+    list-style: none;
+    text-decoration: none;
 }
 
 body{
@@ -23,9 +29,11 @@ body{
     max-width: 1280px;
     margin: 0 auto;
 }
+
 .font-main{
     font-family: 'Share', sans-serif
 }
+
 .font-dancing{
     font-family: 'Dancing Script', cursive;
 }

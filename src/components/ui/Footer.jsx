@@ -6,92 +6,173 @@ import { BiLogoLinkedin } from "react-icons/bi";
 import { IoLogoWhatsapp } from "react-icons/io";
 import Link from "next/link";
 import ScrollToTopButton from "../shared/ScrollToTopButton";
+import Image from "next/image";
 
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <div className="bg-[#2F3137]">
-      <footer className="main-container relative pt-8 pb-6">
-        <div className="container mx-auto">
-          <div className="flex justify-center">
-            <div className="text-center">
-              <h4 className="text-3xl font-semibold text-white">
-                Creative Crew
-              </h4>
-              <h5 className="text-lg mb-4 mt-2 text-white">
-                Capturing Moments, Creating Memories.
-              </h5>
+    <>
+      <div className="bg-[#2F3137]">
+        <footer className="main-container relative text-white pt-8 pb-6">
+          <div className="container mx-auto">
+            <div className="flex flex-wrap text-left gap-y-5 lg:text-left">
+              <div className="w-full md:w-6/12 lg:w-3/12">
+                <h4 className="text-3xl font-semibold text-white">
+                  Creative Crew
+                </h4>
+                <h5 className="text-lg my-2 text-white">
+                  Capturing Moments, Creating Memories.
+                </h5>
+                <div className="mt-6 flex">
+                  <button
+                    className="border-none bg-white text-black text-lightBlue-400 shadow-lg font-normal h-9 w-9 items-center justify-center align-center rounded-md outline-none focus:outline-none mr-4"
+                    type="button"
+                  >
+                    <BsYoutube className="w-full h-full p-2" />
+                  </button>
+                  <button
+                    className="border-none bg-white text-black text-lightBlue-600 shadow-lg font-normal h-9 w-9 items-center justify-center align-center rounded-md outline-none focus:outline-none mr-4"
+                    type="button"
+                  >
+                    <BsTwitter className="w-full h-full p-2" />
+                  </button>
+                  <button
+                    className="border-none bg-white text-black shadow-lg font-normal h-9 w-9 items-center justify-center align-center rounded-md outline-none focus:outline-none mr-4"
+                    type="button"
+                  >
+                    <BsFacebook className="w-full h-full p-2" />
+                  </button>
+                  <button
+                    className="border-none bg-white text-black text-blueGray-800 shadow-lg font-normal h-9 w-9 items-center justify-center align-center rounded-md outline-none focus:outline-none mr-4"
+                    type="button"
+                  >
+                    <BiLogoLinkedin className="w-full h-full p-[6px]" />
+                  </button>
+                  <button
+                    className="border-none bg-white text-black text-blueGray-800 shadow-lg font-normal h-9 w-9 items-center justify-center align-center rounded-md outline-none focus:outline-none mr-4"
+                    type="button"
+                  >
+                    <IoLogoWhatsapp className="w-full h-full p-[6px]" />
+                  </button>
+                </div>
+              </div>
+              <div className="w-full flex lg:justify-center md:w-6/12 lg:w-3/12">
+                <div className="flex flex-wrap ">
+                  <div className="w-full">
+                    <span className="block uppercase text-white text-base font-bold mb-2">
+                      Necessary Links
+                    </span>
+                    <ul className="list-unstyled">
+                      <li>
+                        <Link
+                          className="text-white font-semibold block pb-2 text-sm"
+                          href="/"
+                        >
+                          Home
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          className="text-white font-semibold block pb-2 text-sm"
+                          href="/about"
+                        >
+                          About Us
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          className="text-white font-semibold block pb-2 text-sm"
+                          href="/contact"
+                        >
+                          Contact Us
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          className="text-white font-semibold block pb-2 text-sm"
+                          href="/login"
+                        >
+                          Login
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full md:w-6/12 lg:w-3/12 flex  lg:justify-center">
+                <div className="">
+                  <span className="block uppercase text-white text-base font-bold mb-2">
+                    Other Resources
+                  </span>
+                  <ul className="list-unstyled">
+                    <li>
+                      <Link
+                        className="text-white font-semibold block pb-2 text-sm"
+                        href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile"
+                        target="_blank"
+                      >
+                        Our License
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="text-white font-semibold block pb-2 text-sm"
+                        href="https://creative-tim.com/terms?ref=njs-profile"
+                        target="_blank"
+                      >
+                        Terms &amp; Conditions
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="text-white font-semibold block pb-2 text-sm"
+                        href="https://creative-tim.com/privacy?ref=njs-profile"
+                        target="_blank"
+                      >
+                        Privacy Policy
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="text-white font-semibold block pb-2 text-sm"
+                        href="/certificate"
+                      >
+                        Certificate
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="w-full md:w-6/12 lg:w-3/12 flex justify-start lg:justify-center">
+                <div>
+                  <span className="block uppercase text-white text-base font-bold mb-2">
+                    We Accept
+                  </span>
+                  <div className="w-full">
+                    <Image
+                      src={"/payment.png"}
+                      height={150}
+                      width={320}
+                      alt="paymentImage"
+                    ></Image>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="flex flex-col md:flex-row justify-between w-full">
-            <div className="mt-2 lg:mb-0 mb-6 flex justify-center">
-              <button
-                className="border-none bg-white text-black text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-4"
-                type="button"
-              >
-                <BsYoutube className="w-full h-full p-2" />
-              </button>
-              <button
-                className="border-none bg-white text-black text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-4"
-                type="button"
-              >
-                <BsTwitter className="w-full h-full p-2" />
-              </button>
-              <button
-                className="border-none bg-white text-black shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-4"
-                type="button"
-              >
-                <BsFacebook className="w-full h-full p-2" />
-              </button>
-              <button
-                className="border-none bg-white text-black text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-4"
-                type="button"
-              >
-                <BiLogoLinkedin className="w-full h-full p-[6px]" />
-              </button>
-              <button
-                className="border-none bg-white text-black text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-4"
-                type="button"
-              >
-                <IoLogoWhatsapp className="w-full h-full p-[6px]" />
-              </button>
-            </div>
-            <div className="flex justify-center mt-4">
-              <Link
-                href="/"
-                className="hover:underline font-medium duration-200 mr-5 px-2 py-2 rounded text-white no-underline"
-              >
-                <p>Home</p>
-              </Link>
-              <Link
-                href="/about"
-                className="hover:underline font-medium duration-200 mr-5 px-2 py-2 rounded text-white no-underline"
-              >
-                <p>About Us</p>
-              </Link>
-              <Link
-                href="/contact"
-                className="hover:underline font-medium duration-200 mr-5 px-2 py-2 rounded text-white no-underline"
-              >
-                <p className="">Contact Us</p>
-              </Link>
-            </div>
-          </div>
-          <hr className="my-6 border border-solid border-gray-500" />
-          <div className="flex flex-wrap items-center md:justify-between justify-center">
-            <div className="w-full md:w-6/12 px-4 mx-auto text-center">
-              <div className="text-sm text-white font-semibold py-1">
-                <span id="get-current-year">
+            <hr className="my-6 border-3 border-solid border-gray-200" />
+            <div className="flex flex-col-reverse md:flex-row items-center justify-between">
+              <div className="w-full text-center">
+                <div className="text-sm text-white font-semibold py-1">
                   All Rights Reserved &copy; {year} Creative Crew Online
                   Service.
-                </span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <ScrollToTopButton />
-      </footer>
-    </div>
+          <ScrollToTopButton />
+        </footer>
+      </div>
+    </>
   );
 };
 
