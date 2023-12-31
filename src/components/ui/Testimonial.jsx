@@ -44,7 +44,7 @@ const reviewData = [
 
 const Testimonial = () => {
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -92,7 +92,7 @@ const Testimonial = () => {
         <Slider {...settings}>
           {reviewData.map((data, index) => (
             <div key={index}>
-              <div className="border border-solid border-gray-200 shadow-md my-10 md:mx-4  rounded-xl px-8 py-6">
+              <div className="border border-solid border-gray-200 shadow-md mt-10 mb-4 md:mx-4  rounded-xl px-8 py-6">
                 <div className="text-center">
                   <div>
                     <PiUserCircleThin size={48}></PiUserCircleThin>
