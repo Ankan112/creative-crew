@@ -12,15 +12,15 @@ const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <>
-      <div className="bg-[#2F3137]">
-        <footer className="main-container relative text-white pt-8 pb-6">
+      <div className="bg-primary">
+        <footer className="main-container relative text-primary pt-8 pb-6">
           <div className="container mx-auto">
             <div className="flex flex-wrap text-left gap-y-5 lg:text-left">
               <div className="w-full md:w-6/12 lg:w-3/12">
-                <h4 className="text-3xl font-semibold text-white">
+                <h4 className="text-3xl font-semibold text-primary">
                   Creative Crew
                 </h4>
-                <h5 className="text-lg my-2 text-white">
+                <h5 className="text-lg my-2 text-primary">
                   Capturing Moments, Creating Memories.
                 </h5>
                 <div className="mt-6 flex">
@@ -59,13 +59,13 @@ const Footer = () => {
               <div className="w-full flex lg:justify-center md:w-6/12 lg:w-3/12">
                 <div className="flex flex-wrap ">
                   <div className="w-full">
-                    <span className="block uppercase text-white text-base font-bold mb-2">
+                    <span className="block uppercase text-primary text-base font-bold mb-2">
                       Necessary Links
                     </span>
                     <ul className="list-unstyled">
                       <li>
                         <Link
-                          className="text-white font-semibold block pb-2 text-sm"
+                          className="text-primary font-semibold block pb-2 text-sm"
                           href="/"
                         >
                           Home
@@ -73,7 +73,7 @@ const Footer = () => {
                       </li>
                       <li>
                         <Link
-                          className="text-white font-semibold block pb-2 text-sm"
+                          className="text-primary font-semibold block pb-2 text-sm"
                           href="/about"
                         >
                           About Us
@@ -81,7 +81,7 @@ const Footer = () => {
                       </li>
                       <li>
                         <Link
-                          className="text-white font-semibold block pb-2 text-sm"
+                          className="text-primary font-semibold block pb-2 text-sm"
                           href="/contact"
                         >
                           Contact Us
@@ -89,7 +89,7 @@ const Footer = () => {
                       </li>
                       <li>
                         <Link
-                          className="text-white font-semibold block pb-2 text-sm"
+                          className="text-primary font-semibold block pb-2 text-sm"
                           href="/login"
                         >
                           Login
@@ -101,13 +101,13 @@ const Footer = () => {
               </div>
               <div className="w-full md:w-6/12 lg:w-3/12 flex  lg:justify-center">
                 <div className="">
-                  <span className="block uppercase text-white text-base font-bold mb-2">
+                  <span className="block uppercase text-primary text-base font-bold mb-2">
                     Other Resources
                   </span>
                   <ul className="list-unstyled">
                     <li>
                       <Link
-                        className="text-white font-semibold block pb-2 text-sm"
+                        className="text-primary font-semibold block pb-2 text-sm"
                         href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile"
                         target="_blank"
                       >
@@ -116,7 +116,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <Link
-                        className="text-white font-semibold block pb-2 text-sm"
+                        className="text-primary font-semibold block pb-2 text-sm"
                         href="https://creative-tim.com/terms?ref=njs-profile"
                         target="_blank"
                       >
@@ -125,7 +125,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <Link
-                        className="text-white font-semibold block pb-2 text-sm"
+                        className="text-primary font-semibold block pb-2 text-sm"
                         href="https://creative-tim.com/privacy?ref=njs-profile"
                         target="_blank"
                       >
@@ -134,7 +134,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <Link
-                        className="text-white font-semibold block pb-2 text-sm"
+                        className="text-primary font-semibold block pb-2 text-sm"
                         href="/certificate"
                       >
                         Certificate
@@ -145,7 +145,7 @@ const Footer = () => {
               </div>
               <div className="w-full md:w-6/12 lg:w-3/12 flex justify-start lg:justify-center">
                 <div>
-                  <span className="block uppercase text-white text-base font-bold mb-2">
+                  <span className="block uppercase text-primary text-base font-bold mb-2">
                     We Accept
                   </span>
                   <div className="w-full">
@@ -159,10 +159,10 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <hr className="my-6 border-3 border-solid border-gray-200" />
+            <hr className="my-6 border-3 border-solid border-gray-500" />
             <div className="flex flex-col-reverse md:flex-row items-center justify-between">
               <div className="w-full text-center">
-                <div className="text-sm text-white font-semibold py-1">
+                <div className="text-sm text-primary font-semibold py-1">
                   All Rights Reserved &copy; {year} Creative Crew Online
                   Service.
                 </div>

@@ -26,12 +26,12 @@ const Header = () => {
 
   return (
     <div
-      className={`z-50 z-999 w-full top-0 sticky shadow-sm border-b-0 duration-700 ease-in-out  backdrop-blur-xl opacity-70"
-      }`}
+      className={`z-50 z-999 w-full top-0 sticky bg-secondary shadow-sm border-b-0 duration-700 ease-in-out  backdrop-blur-xl opacity-70"
+    }`}
     >
       <div className="main-container">
         <div
-          className={`navbar-wrapper__body flex flex-row items-center justify-between text-white h-full  py-2 md:py-3`}
+          className={`navbar-wrapper__body flex flex-row items-center justify-between h-full  py-2 md:py-3`}
         >
           <div className="inherit md:hidden">
             <Link

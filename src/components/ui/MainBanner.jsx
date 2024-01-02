@@ -20,10 +20,10 @@ const MainBanner = () => {
         <div className="h-[80vh] flex justify-center items-center bg-cover bg-no-repeat bg-center text-white text-center bg-[url('/banner4.jpg')]"></div>
         <div className="h-[80vh] flex justify-center items-center bg-cover bg-no-repeat bg-center text-white text-center bg-[url('/banner5.jpg')]"></div>
       </Carousel>
-      <div className="flex flex-col md:flex-row justify-between bg-[#2F3137] text-white main-container md:w-2/3 px-10 py-12 rounded-xl -top-24 relative">
+      <div className="flex flex-col md:flex-row justify-between bg-secondary shadow-md primary-color main-container md:w-2/3 px-10 py-12 rounded-xl -top-24 relative">
         <div className="w-full md:w-1/2 lg:w-2/3 flex">
           <h1>Experience the Difference with Our Professional Photographer.</h1>
-          <div className="w-[2px] h-full bg-white hidden md:block"></div>
+          <div className="w-[2px] h-full bg-black hidden md:block"></div>
         </div>
         <div className="w-full md:w-1/2 lg:w-1/3 text-center">
           <h1 className="text-5xl">6+</h1>

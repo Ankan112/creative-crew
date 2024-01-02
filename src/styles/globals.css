@@ -20,8 +20,8 @@ li{
 }
 
 body{
-    font-family: 'Share', sans-serif
-
+    font-family: 'Share', sans-serif;
+    background-color: rgba(232, 219, 221, 0.272)
 }
 
 .main-container{
@@ -38,6 +38,18 @@ body{
     font-family: 'Dancing Script', cursive;
 }
 
+.bg-primary{
+    background-color: #FED6DE;
+}
+.bg-secondary{
+    background-color: #FFF0F0;
+}
+.accent-color{
+    background-color: #835858;
+}
+.text-primary{
+    color: #463333;
+}
 .scroll-to-top-button {
     position: fixed;
     bottom: 20px;
