@@ -31,9 +31,14 @@ const RegisterPage = () => {
       {contextHolder}
       <div className="bg-gray-200">
         <Header />
-        <div className="flex justify-center items-center h-screen">
+        <div className="flex relative justify-center items-center h-screen">
+        <div className="absolute flex justify-center items-center top-[120px] right-[325px]">
+          <h1>Hello HR</h1>
+        </div>
           <div className="w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+          
             <div className="px-6 py-4">
+            
               <h3 className="mt-3 text-xl font-medium text-center text-gray-600 dark:text-gray-200">
                 Welcome To Creative Crew
               </h3>
