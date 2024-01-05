@@ -44,7 +44,7 @@ const Service = () => {
           Create the stories you want people to remember.
         </h1>
       </div>
-      <Row
+      {/* <Row
         style={{ boxShadow: "0px 0px 60px 0px rgba(0, 0, 0, 0.1)" }}
         className="mt-10"
       >
@@ -99,131 +99,29 @@ const Service = () => {
             </Row>
           </Col>
         ))}
-        {/* <Col className="" xs={24} sm={24} md={24} lg={12} span={12}>
-          <Row className="">
-            <Col
-              className="text-center overflow-hidden h-[300px] w-[320px]"
-              xs={24}
-              sm={24}
-              md={12}
-              span={12}
-            >
-              <Link href="/category/outdoor-photography">
-                <Image
-                  className="hover:scale-110 transition duration-700 cursor-pointer object-cover"
-                  src={"/service2.jpg"}
-                  alt="wedding-image"
-                  height={296}
-                  width={320}
-                  responsive="true"
-                ></Image>
-              </Link>
-            </Col>
-            <Col
-              className=" flex justify-center items-center"
-              xs={24}
-              sm={24}
-              md={12}
-              span={12}
-            >
-              <div className="p-7">
-                <h1 className="text-2xl font-semibold">Outdoor Photography</h1>
-                <p className="text-lg my-4">
-                  In the heart of every photograph lies the love that binds two
-                  souls.
-                </p>
-                <MainButton
-                  name="Discover More"
-                  link="/category/outdoor-photography"
-                  style="py-1 px-2 text-lg border-black text-black"
-                />
+        
+      </Row> */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-8">
+        {
+          services?.map((service, index)=>{
+            const {title, description, path} = service;
+            return <div key={index} className="w-full flex justify-center border border-solid border-gray-300 shadow-xl rounded-md p-8">
+            <div className="text-center">
+              <div className="h-14 w-14 rounded-full bg-slate-400 flex justify-center items-center mx-auto">
+                <h1 className="text-4x">0{index+1}</h1>
               </div>
-            </Col>
-          </Row>
-        </Col>
-        <Col className="" xs={24} sm={24} md={24} lg={12} span={12}>
-          <Row className="">
-            <Col
-              className=" flex justify-center items-center"
-              xs={24}
-              sm={24}
-              md={12}
-              span={12}
-            >
-              <div className="p-7">
-                <h1 className="text-2xl font-semibold">Birthday Photography</h1>
-                <p className="text-lg my-4">
-                  With each click, we etch the timeless tale of love and joy.
-                </p>
-                <MainButton
-                  name="Discover More"
-                  link="/category/birthday-photography"
-                  style="py-1 px-2 text-lg border-black text-black"
-                />
-              </div>
-            </Col>
-            <Col
-              className="text-center overflow-hidden h-[296px] w-[320px]"
-              xs={24}
-              sm={24}
-              md={12}
-              span={12}
-            >
-              <Link href="/category/birthday-photography">
-                <Image
-                  className="hover:scale-110 transition duration-700 cursor-pointer object-cover"
-                  src={"/service3.jpg"}
-                  alt="wedding-image"
-                  height={296}
-                  width={320}
-                  responsive="true"
-                ></Image>
-              </Link>
-            </Col>
-          </Row>
-        </Col>
-        <Col className="" xs={24} sm={24} md={24} lg={12} span={12}>
-          <Row className=" ">
-            <Col
-              className=" flex justify-center items-center"
-              xs={24}
-              sm={24}
-              md={12}
-              span={12}
-            >
-              <div className="p-7">
-                <h1 className="text-2xl font-semibold">Mehendi Photography</h1>
-                <p className="text-lg my-4">
-                  Each click, a chapter of love written in light and emotion.
-                </p>
-                <MainButton
-                  name="Discover More"
-                  link="/category/medendi-photography"
-                  style="py-1 px-2 text-lg border-black text-black"
-                />
-              </div>
-            </Col>
-            <Col
-              className="text-center overflow-hidden h-[296px] w-[320px]"
-              xs={24}
-              sm={24}
-              md={12}
-              span={12}
-            >
-              <Link href="/category/mehendi-photography">
-                <Image
-                  className="hover:scale-110 transition duration-700 cursor-pointer object-cover"
-                  src={"/service4.jpg"}
-                  alt="wedding-image"
-                  height={296}
-                  width={320}
-                  responsive="true"
-                ></Image>
-              </Link>
-            </Col>
-          </Row>
-        </Col> */}
-      </Row>
+              <h2 className="mt-6 mb-3">{title}</h2>
+              <p className="mb-4">{description}</p>
+              <MainButton 
+              name='Check Details' 
+              link={`/categroy/${path}`}
+              style="py-[2px] px-2 text-lg border-black text-black"
+              />
+            </div>
+          </div>
+          })
+        }
+      </div>
     </div>
   );
 };
