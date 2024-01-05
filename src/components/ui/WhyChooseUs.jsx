@@ -2,19 +2,19 @@ import { Col, Row } from "antd";
 import { GrUserExpert } from "react-icons/gr";
 import { BiCustomize, BiSupport, BiLogoReact } from "react-icons/bi";
 import Image from "next/image";
+import AboutImage from "../../../public/about2.jpg"
 
 const WhyChooseUs = () => {
   return (
     <div className="main-container my-20">
       <Row>
-        <Col xs={24} sm={24} md={24} lg={8} span={8}>
-          <div className="h-auto w-full hidden lg:block">
+        <Col span={8}>
+          <div className=" hidden lg:block">
             <Image
-              src="/about2.jpg"
+              src={AboutImage}
               alt="about"
               height={550}
               width={425}
-              responsive="true"
             ></Image>
           </div>
         </Col>

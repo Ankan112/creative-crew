@@ -44,63 +44,6 @@ const Service = () => {
           Create the stories you want people to remember.
         </h1>
       </div>
-      {/* <Row
-        style={{ boxShadow: "0px 0px 60px 0px rgba(0, 0, 0, 0.1)" }}
-        className="mt-10"
-      >
-        {services.map((data, index) => (
-          <Col
-            key={index}
-            className=""
-            xs={24}
-            sm={24}
-            md={24}
-            lg={12}
-            span={12}
-          >
-            <Row className={data.style}>
-              <Col
-                className="text-center overflow-hidden h-[296px] w-[320px]"
-                xs={24}
-                sm={24}
-                md={12}
-                span={12}
-              >
-                <Link href={`/category/${data.path}`}>
-                  <Image
-                    className="hover:scale-110 transition duration-700 cursor-pointer object-cover"
-                    src={data.image}
-                    alt={data.title}
-                    height={300}
-                    width={320}
-                    responsive="true"
-                  ></Image>
-                </Link>
-              </Col>
-              <Col
-                className=" flex justify-center items-center"
-                xs={24}
-                sm={24}
-                md={12}
-                span={12}
-              >
-                <div className="p-7">
-                  <h1 className="text-2xl font-main font-semibold">
-                    {data.title}
-                  </h1>
-                  <p className="text-lg font-main my-4">{data.description}</p>
-                  <MainButton
-                    name="Discover More"
-                    link={`/category/${data.path}`}
-                    style="py-1 px-2 text-lg border-black text-black"
-                  />
-                </div>
-              </Col>
-            </Row>
-          </Col>
-        ))}
-        
-      </Row> */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-8">
         {
           services?.map((service, index)=>{
@@ -114,7 +57,7 @@ const Service = () => {
               <p className="mb-4">{description}</p>
               <MainButton 
               name='Check Details' 
-              link={`/categroy/${path}`}
+              link={`/category/${path}`}
               style="py-[2px] px-2 text-lg border-black text-black"
               />
             </div>
