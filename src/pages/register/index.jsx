@@ -1,3 +1,4 @@
+import AuthCredential from "@/components/shared/AuthCredential";
 import Header from "@/components/ui/Header";
 import { Button, Checkbox, message } from "antd";
 import Link from "next/link";
@@ -32,20 +33,11 @@ const RegisterPage = () => {
       <div className="bg-gray-200">
         <Header />
         <div className="flex relative justify-center items-center h-screen">
-        <div className="absolute flex justify-center bg-slate-400 lg:p-5 rounded-md items-center top-[20%] right-[18%]">
-          <div className="hidden lg:block">
-          <h4>User Credential</h4>
-          <p className="mt-1 mb-[2px]">Email: user@gmail.com</p>
-          <p>Password: 123456</p>
-          <h4 className="mt-3">Admin Credential</h4>
-          <p className="mt-1 mb-[2px]">Email: admin@admin.com</p>
-          <p>Password: 123456</p>
-          </div>
-        </div>
+          <AuthCredential />
           <div className="w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
-          
+
             <div className="px-6 py-4">
-            
+
               <h3 className="mt-3 text-xl font-medium text-center text-gray-600 dark:text-gray-200">
                 Welcome To Creative Crew
               </h3>
