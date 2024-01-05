@@ -32,8 +32,15 @@ const RegisterPage = () => {
       <div className="bg-gray-200">
         <Header />
         <div className="flex relative justify-center items-center h-screen">
-        <div className="absolute flex justify-center items-center top-[120px] right-[325px]">
-          <h1>Hello HR</h1>
+        <div className="absolute flex justify-center bg-slate-400 lg:p-5 rounded-md items-center top-[20%] right-[18%]">
+          <div className="hidden lg:block">
+          <h4>User Credential</h4>
+          <p className="mt-1 mb-[2px]">Email: user@gmail.com</p>
+          <p>Password: 123456</p>
+          <h4 className="mt-3">Admin Credential</h4>
+          <p className="mt-1 mb-[2px]">Email: admin@admin.com</p>
+          <p>Password: 123456</p>
+          </div>
         </div>
           <div className="w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
           
