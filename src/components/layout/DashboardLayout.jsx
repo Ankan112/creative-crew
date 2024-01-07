@@ -144,7 +144,7 @@ const DashboardLayout = ({ children }) => {
             <div
               style={{
                 padding: 24,
-                height: "100vh",
+                // height: "100vh",
                 background: colorBgContainer,
               }}
             >

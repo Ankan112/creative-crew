@@ -1,6 +1,7 @@
 import DashboardLayout from "@/components/layout/DashboardLayout";
 import { Space, Table, message } from "antd";
 import { DeleteOutlined } from "@ant-design/icons";
+import MainButton from "@/components/shared/MainButton";
 
 const Services = () => {
   const columns = [
@@ -53,30 +54,36 @@ const Services = () => {
       });
     }, 1000);
   };
-  const data = [
+  const services = [
     {
-      key: "1",
-      service: "Wedding Photography",
-      minPrice: 400,
-      maxPrice: 1000,
+      image: "/service1.jpg",
+      title: "Wedding Photography",
+      description:
+        "Every click a timeless memory, every shot a love story unfolded.",
+      path: "wedding-photography",
     },
     {
-      key: "2",
-      service: "Outdoor Photography",
-      minPrice: 400,
-      maxPrice: 1000,
+      image: "/service2.jpg",
+      title: "Outdoor Photography",
+      description:
+        "In the heart of every photograph lies the love that binds two souls.",
+      path: "outdoor-photography",
     },
     {
-      key: "3",
-      service: "Birthday Photography",
-      minPrice: 400,
-      maxPrice: 1000,
+      image: "/service3.jpg",
+      title: "Birthday Photography",
+      description:
+        "With each click, we etch the timeless tale of love and joy.",
+      path: "birthday-photography",
+      style: "flex flex-col md:flex-row-reverse ",
     },
     {
-      key: "4",
-      service: "Mehendi Photography",
-      minPrice: 400,
-      maxPrice: 1000,
+      image: "/service4.jpg",
+      title: "Mehendi Photography",
+      description:
+        "Each click, a chapter of love written in light and emotion.",
+      path: "mehendi-photography",
+      style: "flex flex-col md:flex-row-reverse ",
     },
   ];
 
@@ -84,8 +91,44 @@ const Services = () => {
     <>
       {contextHolder}
       <div className="h-screen main-container">
-        <h1 className="text-center my-10">All Services</h1>
-        <Table columns={columns} dataSource={data} />
+        <h1 className="text-left my-10">All Services</h1>
+        {/* <Table columns={columns} dataSource={data} /> */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8">
+          {
+            services?.map((service, index) => {
+              const { title, description, path } = service;
+              return <div key={index} className="w-full flex justify-center border border-solid border-gray-300 shadow-xl rounded-md p-8">
+                <div className="text-center">
+                  <div className="h-14 w-14 rounded-full bg-slate-400 flex justify-center items-center mx-auto">
+                    <h1 className="text-4x">0{index + 1}</h1>
+                  </div>
+                  <h2 className="mt-6 mb-3">{title}</h2>
+                 <div>
+
+                  <Space
+                    onClick={openMessage}
+                    type="dashed"
+                    className="cursor-pointer py-1 px-2 rounded bg-red-600 text-white"
+                    size="middle"
+                  >
+                    <DeleteOutlined />
+                    <p>Delete</p>
+                  </Space>
+                  <Space
+                    onClick={openMessage}
+                    type="dashed"
+                    className="cursor-pointer py-1 px-2 rounded bg-red-600 text-white"
+                    size="middle"
+                  >
+                    <DeleteOutlined />
+                    <p>Delete</p>
+                  </Space>
+                    </div>
+                </div>
+              </div>
+            })
+          }
+        </div>
       </div>
     </>
   );
