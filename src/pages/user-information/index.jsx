@@ -1,5 +1,5 @@
 import RootLayout from "@/components/layout/RootLayout";
-import { Modal, Space, Table, Tag, message } from "antd";
+import { Input, Modal, Space, Table, Tag, message } from "antd";
 import { EditOutlined } from "@ant-design/icons";
 import MainModal from "@/components/shared/Modal";
 import { useState } from "react";
@@ -28,7 +28,7 @@ const UserInformation = () => {
       title: "Action",
       key: "action",
       render: (_, record) => (
-        <Space onClick={showModal} className="cursor-pointer" size="middle">
+        <Space onClick={showModal} className="cursor-pointer py-1 px-2 rounded accent-color text-white" size="middle">
           <EditOutlined />
           <p>Edit Profile</p>
         </Space>
@@ -64,7 +64,8 @@ const UserInformation = () => {
     setIsModalOpen(false);
   };
   const user = getUser();
-  const data = [user];
+  const newUser = {...user, name:'Ankan Halder',phone:8809883921}
+  const data = [newUser];
   return (
     <>
       {contextHolder}
@@ -77,10 +78,24 @@ const UserInformation = () => {
       </div>
 
       <MainModal
+      title={'User Information Update'}
         isModalOpen={isModalOpen}
         handleCancel={handleCancel}
         handleOk={handleOk}
-      ></MainModal>
+      >
+        <div className="mb-2">
+            <p className="mb-1">Name</p>
+            <Input defaultValue={newUser.name} placeholder="Enter your Name" />
+          </div>
+          <div className="mb-2">
+            <p className="mb-1">Email</p>
+            <Input defaultValue={newUser.email} placeholder="Enter your Email Address" />
+          </div>
+          <div className="mb-2">
+            <p className="mb-1">Phone</p>
+            <Input defaultValue={newUser.phone} placeholder="Enter your Phone" />
+          </div>
+      </MainModal>
     </>
   );
 };
