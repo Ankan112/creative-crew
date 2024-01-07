@@ -1,15 +1,15 @@
 import DashboardLayout from "@/components/layout/DashboardLayout";
+import NotifictionForm from "@/components/shared/NotificationForm";
 import TitleBorder from "@/components/shared/TitleBorder";
-import { Empty } from "antd";
 
 const Notifications = () => {
   return (
-    <div>
+    <div className="mx-auto">
       <div className="my-10">
         <h1 className="font-main">Create Notifaction</h1>
         <TitleBorder/>
         </div>
-      <Empty></Empty>
+      <NotifictionForm/>
     </div>
   );
 };
