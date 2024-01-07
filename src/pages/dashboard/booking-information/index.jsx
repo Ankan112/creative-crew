@@ -1,4 +1,5 @@
 import DashboardLayout from "@/components/layout/DashboardLayout";
+import TitleBorder from "@/components/shared/TitleBorder";
 import BookingHistory from "@/pages/booking-history";
 import { Space, Table, Tag } from "antd";
 const columns = [
@@ -98,7 +99,10 @@ const data = [
 const BookingInformation = () => {
   return (
     <div className="h-screen main-container">
-      <h1 className="text-left my-10">Booking Information</h1>
+      <div className="my-10">
+        <h1 className="font-main">Booking Information</h1>
+        <TitleBorder/>
+        </div>
       <Table columns={columns} dataSource={data} />
     </div>
   );

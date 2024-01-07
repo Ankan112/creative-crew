@@ -3,6 +3,7 @@ import { Input, Modal, Space, message } from "antd";
 import { DeleteOutlined, EditOutlined } from "@ant-design/icons";
 import { createContext, useState } from "react";
 import MainModal from "@/components/shared/Modal";
+import TitleBorder from "@/components/shared/TitleBorder";
 
 const ReachableContext = createContext(null);
 const UnreachableContext = createContext(null);
@@ -81,7 +82,10 @@ const Services = () => {
       <ReachableContext.Provider value="Light">
         {contextHolder}
         <div className="h-screen main-container">
-          <h1 className="text-left my-10">All Services</h1>
+        <div className="my-10">
+        <h1 className="font-main">All Services</h1>
+        <TitleBorder/>
+        </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8">
             {
               services?.map((service, index) => {

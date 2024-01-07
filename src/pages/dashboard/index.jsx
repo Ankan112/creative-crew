@@ -1,11 +1,13 @@
 import DashboardLayout from "@/components/layout/DashboardLayout";
+import TitleBorder from "@/components/shared/TitleBorder";
 import React from "react";
 
 const Dashboard = () => {
   return (
-    <h1 className="text-3xl text-center font-semibold">
-      Welcome to Dashboard!
-    </h1>
+    <div className="my-10">
+    <h1 className="font-main">Dashboard Home</h1>
+    <TitleBorder/>
+    </div>
   );
 };
 
