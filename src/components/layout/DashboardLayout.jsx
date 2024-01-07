@@ -45,6 +45,16 @@ const DashboardLayout = ({ children }) => {
               Dashboard Home
             </p>
           </Link>
+          <Link href="/dashboard/order">
+            <p
+              onClick={() => handleButtonClicked(9)}
+              className={`text-white text-center ${
+                activeButton === 9 && buttonStyle
+              } text-base py-1 hover:bg-orange-400 duration-200 cursor-pointer mt-5 w-[90%] mx-auto rounded-md`}
+            >
+              New Order
+            </p>
+          </Link>
           {data?.email === "admin@admin.com" ? (
             <>
               <Link href="/dashboard/all-user">
