@@ -34,7 +34,7 @@ const AllUser = () => {
         <Space
           onClick={openMessage}
           type="dashed"
-          className="cursor-pointer"
+          className="cursor-pointer py-1 px-2 rounded bg-red-600 text-white"
           size="middle"
         >
           <DeleteOutlined />
