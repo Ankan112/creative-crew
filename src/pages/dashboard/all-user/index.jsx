@@ -8,6 +8,7 @@ import {
 import MainModal from "@/components/shared/Modal";
 import { useState } from "react";
 import { getUser } from "@/constant";
+import TitleBorder from "@/components/shared/TitleBorder";
 
 const AllUser = () => {
   const columns = [
@@ -97,7 +98,10 @@ const AllUser = () => {
     <>
       {contextHolder}
       <div className="h-screen main-container">
-        <h1 className="text-center my-10">User Information</h1>
+        <div className="my-10">
+        <h1 className="font-main">User Information</h1>
+        <TitleBorder/>
+        </div>
         <Table columns={columns} dataSource={data} />
       </div>
     </>
