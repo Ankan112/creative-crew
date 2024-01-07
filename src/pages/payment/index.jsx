@@ -1,4 +1,5 @@
 import RootLayout from "@/components/layout/RootLayout";
+import PaymentPageForm from "@/components/shared/PaymentPageForm";
 import TitleBorder from "@/components/shared/TitleBorder";
 import { Space, Table, Tag } from "antd";
 const columns = [
@@ -49,7 +50,6 @@ const columns = [
     ),
   },
 ];
-const data = [];
 
 const Payment = () => {
   return (
@@ -58,7 +58,7 @@ const Payment = () => {
         <h1 className="font-main">Continue To Pay</h1>
         <TitleBorder/>
         </div>
-      <Table columns={columns} dataSource={data} />
+        <PaymentPageForm/>
     </div>
   );
 };
