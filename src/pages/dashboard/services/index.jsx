@@ -1,7 +1,9 @@
 import DashboardLayout from "@/components/layout/DashboardLayout";
-import { Space, Table, message } from "antd";
-import { DeleteOutlined } from "@ant-design/icons";
+import { Input, Space, Table, message } from "antd";
+import { DeleteOutlined, EditOutlined } from "@ant-design/icons";
 import MainButton from "@/components/shared/MainButton";
+import { useState } from "react";
+import MainModal from "@/components/shared/Modal";
 
 const Services = () => {
   const columns = [
@@ -86,7 +88,17 @@ const Services = () => {
       style: "flex flex-col md:flex-row-reverse ",
     },
   ];
-
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+  const handleOk = () => {
+    setIsModalOpen(false);
+    openMessage();
+  };
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
   return (
     <>
       {contextHolder}
@@ -103,33 +115,56 @@ const Services = () => {
                     <h1 className="text-4x">0{index + 1}</h1>
                   </div>
                   <h2 className="mt-6 mb-3">{title}</h2>
-                 <div>
+                  <div className="flex gap-5 justify-center mt-5">
 
-                  <Space
-                    onClick={openMessage}
-                    type="dashed"
-                    className="cursor-pointer py-1 px-2 rounded bg-red-600 text-white"
-                    size="middle"
-                  >
-                    <DeleteOutlined />
-                    <p>Delete</p>
-                  </Space>
-                  <Space
-                    onClick={openMessage}
-                    type="dashed"
-                    className="cursor-pointer py-1 px-2 rounded bg-red-600 text-white"
-                    size="middle"
-                  >
-                    <DeleteOutlined />
-                    <p>Delete</p>
-                  </Space>
-                    </div>
+                    <Space
+                      onClick={showModal}
+                      type="dashed"
+                      className="cursor-pointer py-1 px-2 rounded accent-color text-white"
+                      size="middle"
+                    >
+                      <EditOutlined />
+                      <p>Edit Profile</p>
+                    </Space>
+                    <Space
+                      onClick={openMessage}
+                      type="dashed"
+                      className="cursor-pointer py-1 px-2 rounded bg-red-600 text-white"
+                      size="middle"
+                    >
+                      <DeleteOutlined />
+                      <p>Delete</p>
+                    </Space>
+                  </div>
                 </div>
               </div>
             })
           }
         </div>
       </div>
+      <MainModal
+      title={'Edit Service'}
+        isModalOpen={isModalOpen}
+        handleCancel={handleCancel}
+        handleOk={handleOk}
+      >
+        <div className="mb-2">
+        <p className="mb-1">Service Name</p>
+        <Input placeholder="Enter your service Name" />
+      </div>
+      <div className="mb-2">
+        <p className="mb-1">Description</p>
+        <Input placeholder="Enter your service description" />
+      </div>
+      <div className="mb-2">
+        <p className="mb-1">Image URL</p>
+        <Input placeholder="Enter your serivice Image URL" />
+      </div>
+      <div className="mb-2">
+        <p className="mb-1">Service Path</p>
+        <Input placeholder="Enter your serivice path" />
+      </div>
+      </MainModal>
     </>
   );
 };
