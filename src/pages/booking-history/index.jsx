@@ -1,4 +1,5 @@
 import RootLayout from "@/components/layout/RootLayout";
+import TitleBorder from "@/components/shared/TitleBorder";
 import { Space, Table, Tag } from "antd";
 const columns = [
   {
@@ -57,7 +58,10 @@ const data = [];
 const BookingHistory = () => {
   return (
     <div className="h-screen main-container">
-      <h1 className="text-center my-10">Booking History</h1>
+      <div className="my-10">
+        <h1 className="font-main">Booking History</h1>
+        <TitleBorder/>
+        </div>
       <Table columns={columns} dataSource={data} />
     </div>
   );
