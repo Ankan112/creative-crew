@@ -67,11 +67,21 @@ const DashboardLayout = ({ children }) => {
                   Services
                 </p>
               </Link>
-              <Link href="/dashboard/booking-information">
+              <Link href="/dashboard/create-service">
                 <p
                   onClick={() => handleButtonClicked(3)}
                   className={`text-white text-center ${
                     activeButton === 3 && buttonStyle
+                  } text-base py-1 hover:bg-orange-400 duration-200 cursor-pointer mt-5 w-[90%] mx-auto rounded-md`}
+                >
+                Create Service
+                </p>
+              </Link>
+              <Link href="/dashboard/booking-information">
+                <p
+                  onClick={() => handleButtonClicked(4)}
+                  className={`text-white text-center ${
+                    activeButton === 4 && buttonStyle
                   } text-base py-1 hover:bg-orange-400 duration-200 cursor-pointer mt-5 w-[90%] mx-auto rounded-md`}
                 >
                   Booking Information
@@ -82,9 +92,9 @@ const DashboardLayout = ({ children }) => {
             <>
               <Link href="/dashboard/user-profile">
                 <p
-                  onClick={() => handleButtonClicked(4)}
+                  onClick={() => handleButtonClicked(5)}
                   className={`text-white text-center ${
-                    activeButton === 4 && buttonStyle
+                    activeButton === 5 && buttonStyle
                   } text-base py-1 hover:bg-orange-400 duration-200 cursor-pointer mt-5 w-[90%] mx-auto rounded-md`}
                 >
                   User Profile
@@ -92,9 +102,9 @@ const DashboardLayout = ({ children }) => {
               </Link>
               <Link href="/dashboard/booking-history">
                 <p
-                  onClick={() => handleButtonClicked(5)}
+                  onClick={() => handleButtonClicked(6)}
                   className={`text-white text-center ${
-                    activeButton === 5 && buttonStyle
+                    activeButton === 6 && buttonStyle
                   } text-base py-1 hover:bg-orange-400 duration-200 cursor-pointer mt-5 w-[90%] mx-auto rounded-md`}
                 >
                   Booking History
@@ -102,9 +112,9 @@ const DashboardLayout = ({ children }) => {
               </Link>
               <Link href="/dashboard/payment">
                 <p
-                  onClick={() => handleButtonClicked(6)}
+                  onClick={() => handleButtonClicked(7)}
                   className={`text-white text-center ${
-                    activeButton === 6 && buttonStyle
+                    activeButton === 7 && buttonStyle
                   } text-base py-1 hover:bg-orange-400 duration-200 cursor-pointer mt-5 w-[90%] mx-auto rounded-md`}
                 >
                   Payment
@@ -114,9 +124,9 @@ const DashboardLayout = ({ children }) => {
           )}
           <Link href="/dashboard/notifications">
             <p
-              onClick={() => handleButtonClicked(7)}
+              onClick={() => handleButtonClicked(8)}
               className={`text-white text-center ${
-                activeButton === 7 && buttonStyle
+                activeButton === 8 && buttonStyle
               } text-base py-1 hover:bg-orange-400 duration-200 cursor-pointer mt-5 w-[90%] mx-auto rounded-md`}
             >
               Notifications
