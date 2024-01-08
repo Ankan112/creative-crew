@@ -13,7 +13,7 @@ const DashboardLayout = ({ children }) => {
   } = theme.useToken();
 
   const data = getUser();
-  const buttonStyle = "bg-orange-400";
+  const buttonStyle = "bg-[#835858]";
   const handleButtonClicked = (number) => {
     if (activeButton !== number) {
       setActiveButton(number);
@@ -27,6 +27,7 @@ const DashboardLayout = ({ children }) => {
         <Sider
           breakpoint="lg"
           collapsedWidth="0"
+          className="bg-[#463333]"
           onBreakpoint={(broken) => {
             // console.log(broken);
           }}
@@ -40,7 +41,7 @@ const DashboardLayout = ({ children }) => {
               onClick={() => handleButtonClicked(0)}
               className={`text-white text-center ${
                 activeButton === 0 && buttonStyle
-              } text-base py-1 hover:bg-orange-400 duration-200 cursor-pointer mt-5 w-[90%] mx-auto rounded-md`}
+              } text-base py-1 hover:bg-[#835858] duration-200 cursor-pointer w-[95%] rounded mt-5 mx-auto`}
             >
               Dashboard Home
             </p>
@@ -50,7 +51,7 @@ const DashboardLayout = ({ children }) => {
               onClick={() => handleButtonClicked(9)}
               className={`text-white text-center ${
                 activeButton === 9 && buttonStyle
-              } text-base py-1 hover:bg-orange-400 duration-200 cursor-pointer mt-5 w-[90%] mx-auto rounded-md`}
+              } text-base py-1 hover:bg-[#835858] duration-200 cursor-pointer mt-5 w-[95%] mx-auto rounded`}
             >
               New Order
             </p>
@@ -62,7 +63,7 @@ const DashboardLayout = ({ children }) => {
                   onClick={() => handleButtonClicked(1)}
                   className={`text-white text-center ${
                     activeButton === 1 && buttonStyle
-                  } text-base py-1 hover:bg-orange-400 duration-200 cursor-pointer mt-5 w-[90%] mx-auto rounded-md`}
+                  } text-base py-1 hover:bg-[#835858] duration-200 cursor-pointer mt-5 w-[95%] mx-auto rounded`}
                 >
                   All User
                 </p>
@@ -72,7 +73,7 @@ const DashboardLayout = ({ children }) => {
                   onClick={() => handleButtonClicked(2)}
                   className={`text-white text-center ${
                     activeButton === 2 && buttonStyle
-                  } text-base py-1 hover:bg-orange-400 duration-200 cursor-pointer mt-5 w-[90%] mx-auto rounded-md`}
+                  } text-base py-1 hover:bg-[#835858] duration-200 cursor-pointer mt-5 w-[95%] mx-auto rounded`}
                 >
                   Services
                 </p>
@@ -82,7 +83,7 @@ const DashboardLayout = ({ children }) => {
                   onClick={() => handleButtonClicked(3)}
                   className={`text-white text-center ${
                     activeButton === 3 && buttonStyle
-                  } text-base py-1 hover:bg-orange-400 duration-200 cursor-pointer mt-5 w-[90%] mx-auto rounded-md`}
+                  } text-base py-1 hover:bg-[#835858] duration-200 cursor-pointer mt-5 w-[95%] mx-auto rounded`}
                 >
                 Create Service
                 </p>
@@ -92,7 +93,7 @@ const DashboardLayout = ({ children }) => {
                   onClick={() => handleButtonClicked(4)}
                   className={`text-white text-center ${
                     activeButton === 4 && buttonStyle
-                  } text-base py-1 hover:bg-orange-400 duration-200 cursor-pointer mt-5 w-[90%] mx-auto rounded-md`}
+                  } text-base py-1 hover:bg-[#835858] duration-200 cursor-pointer mt-5 w-[95%] mx-auto rounded`}
                 >
                   Booking Information
                 </p>
@@ -105,7 +106,7 @@ const DashboardLayout = ({ children }) => {
                   onClick={() => handleButtonClicked(5)}
                   className={`text-white text-center ${
                     activeButton === 5 && buttonStyle
-                  } text-base py-1 hover:bg-orange-400 duration-200 cursor-pointer mt-5 w-[90%] mx-auto rounded-md`}
+                  } text-base py-1 hover:bg-[#835858] duration-200 cursor-pointer mt-5 w-[95%] mx-auto rounded`}
                 >
                   User Profile
                 </p>
@@ -115,7 +116,7 @@ const DashboardLayout = ({ children }) => {
                   onClick={() => handleButtonClicked(6)}
                   className={`text-white text-center ${
                     activeButton === 6 && buttonStyle
-                  } text-base py-1 hover:bg-orange-400 duration-200 cursor-pointer mt-5 w-[90%] mx-auto rounded-md`}
+                  } text-base py-1 hover:bg-[#835858] duration-200 cursor-pointer mt-5 w-[95%] mx-auto rounded`}
                 >
                   Booking History
                 </p>
@@ -125,7 +126,7 @@ const DashboardLayout = ({ children }) => {
                   onClick={() => handleButtonClicked(7)}
                   className={`text-white text-center ${
                     activeButton === 7 && buttonStyle
-                  } text-base py-1 hover:bg-orange-400 duration-200 cursor-pointer mt-5 w-[90%] mx-auto rounded-md`}
+                  } text-base py-1 hover:bg-[#835858] duration-200 cursor-pointer mt-5 w-[95%] mx-auto rounded`}
                 >
                   Payment
                 </p>
@@ -137,14 +138,14 @@ const DashboardLayout = ({ children }) => {
               onClick={() => handleButtonClicked(8)}
               className={`text-white text-center ${
                 activeButton === 8 && buttonStyle
-              } text-base py-1 hover:bg-orange-400 duration-200 cursor-pointer mt-5 w-[90%] mx-auto rounded-md`}
+              } text-base py-1 hover:bg-[#835858] duration-200 cursor-pointer mt-5 w-[95%] mx-auto rounded`}
             >
               Notifications
             </p>
           </Link>
 
           <p
-            className={`text-white text-center text-base py-1 hover:bg-orange-400 duration-200 cursor-pointer mt-5 w-[90%] mx-auto rounded-md`}
+            className={`text-white text-center text-base py-1 hover:bg-[#835858] duration-200 cursor-pointer mt-5 w-[95%] mx-auto rounded`}
           >
             Logout
           </p>
