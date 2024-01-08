@@ -1,5 +1,5 @@
 import DashboardLayout from "@/components/layout/DashboardLayout";
-import UserInformation from "@/pages/user-information";
+import UserInformation from "@/components/user-information";
 
 const UserProfile = () => {
   return (

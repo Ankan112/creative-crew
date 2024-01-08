@@ -1,4 +1,5 @@
 import RootLayout from "@/components/layout/RootLayout";
+import MainButton from "@/components/shared/MainButton";
 
 // import Button from "@/components/UI/Button";
 import { Input } from "antd";
@@ -61,7 +62,7 @@ const ContactUs = () => {
               className="font-sans resize-y rounded-md w-full min-h-[150px] p-3 border-2 border-gray-400  text-gray-700 leading-tight  focus:shadow-outline"
               placeholder="Type Your Message"
             ></textarea>
-            {/* <Button btnName="Send Message" styles="w-full py-3"></Button> */}
+            <MainButton name="Send Message" link={'/contact'} style="w-full py-3"></MainButton>
           </form>
         </div>
         <div className="w-full md:w-[50%] flex flex-col justify-center gap-6 text-gray-800">

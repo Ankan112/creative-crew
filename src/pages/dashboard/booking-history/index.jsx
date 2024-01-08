@@ -1,5 +1,5 @@
 import DashboardLayout from "@/components/layout/DashboardLayout";
-import DashboardBookingHistory from "@/pages/booking-history";
+import DashboardBookingHistory from "@/components/booking-history";
 const BookingHistory = () => {
   return (
     <div>

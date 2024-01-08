@@ -4,7 +4,7 @@ import TitleBorder from "@/components/shared/TitleBorder";
 
 export default function CreateSerivce(){
     return(
-        <div className="mx-auto">
+        <div className="mx-auto main-container">
       <div className="my-10">
         <h1 className="font-main">Create Notifaction</h1>
         <TitleBorder/>

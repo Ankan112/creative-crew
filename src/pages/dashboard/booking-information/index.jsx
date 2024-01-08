@@ -1,6 +1,6 @@
 import DashboardLayout from "@/components/layout/DashboardLayout";
 import TitleBorder from "@/components/shared/TitleBorder";
-import BookingHistory from "@/pages/booking-history";
+import BookingHistory from "@/components/booking-history";
 import { Space, Table, Tag } from "antd";
 const columns = [
   {
