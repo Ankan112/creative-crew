@@ -23,7 +23,7 @@ const Header = () => {
     // window.location.reload();
   };
   const data = getUser();
-  console.log(data?.email);
+
 
   return (
     <div
@@ -77,6 +77,14 @@ const Header = () => {
                 >
                   <p className="">Contact Us</p>
                 </Link>
+                {
+                  !!data?.email === true && !(data?.email == 'admin@admin.com') && <Link
+                  href="/"
+                  className="hover:underline font-medium duration-200 mr-5 px-2 py-2 rounded text-black no-underline"
+                >
+                  <p className="">Notification</p>
+                </Link>
+                }
                 {!data?.email && (
                   <MainButton
                     name="Login"
