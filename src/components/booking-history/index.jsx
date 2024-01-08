@@ -82,6 +82,3 @@ const BookingHistory = () => {
 
 export default BookingHistory;
 
-BookingHistory.getLayout = function getLayout(page) {
-  return <RootLayout>{page}</RootLayout>;
-};

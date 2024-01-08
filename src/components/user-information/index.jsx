@@ -102,6 +102,3 @@ const UserInformation = () => {
 
 export default UserInformation;
 
-UserInformation.getLayout = function getLayout(page) {
-  return <RootLayout>{page}</RootLayout>;
-};

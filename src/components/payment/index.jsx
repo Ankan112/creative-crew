@@ -16,6 +16,4 @@ const Payment = () => {
 
 export default Payment;
 
-Payment.getLayout = function getLayout(page) {
-  return <RootLayout>{page}</RootLayout>;
-};
+
