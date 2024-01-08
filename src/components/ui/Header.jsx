@@ -18,8 +18,9 @@ const Header = () => {
   };
 
   const handleSignOut = () => {
+    router.push('/')
     localStorage.removeItem("user");
-    window.location.reload();
+    // window.location.reload();
   };
   const data = getUser();
   console.log(data?.email);

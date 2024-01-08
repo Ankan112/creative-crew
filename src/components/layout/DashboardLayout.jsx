@@ -4,9 +4,11 @@ import Navbar from "@/components/ui/Header";
 import Footer from "@/components/ui/Footer";
 import Link from "next/link";
 import { getUser } from "@/constant";
+import { useRouter } from "next/router";
 const { Header, Content, Sider } = Layout;
 
 const DashboardLayout = ({ children }) => {
+  const router = useRouter();
   const [activeButton, setActiveButton] = useState(0);
   const {
     token: { colorBgContainer },
@@ -19,7 +21,11 @@ const DashboardLayout = ({ children }) => {
       setActiveButton(number);
     }
   };
-
+  const handleSignOut = () => {
+    router.push('/')
+    localStorage.removeItem("user");
+    // window.location.reload();
+  };
   return (
     <>
       <Navbar />
@@ -134,6 +140,7 @@ const DashboardLayout = ({ children }) => {
             </>
           )}
           <p
+          onClick={handleSignOut}
             className={`text-white text-center text-base py-1 hover:bg-[#835858] duration-200 cursor-pointer mt-5 w-[95%] mx-auto rounded`}
           >
             Logout
