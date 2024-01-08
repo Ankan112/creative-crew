@@ -23,7 +23,7 @@ const LoginPage = () => {
 
   const onSubmit = (data) => {
     localStorage.setItem("user", JSON.stringify(data));
-    router.push("/user-information");
+    router.push("/");
     reset();
     messageApi.open({
       type: "success",
