@@ -45,25 +45,28 @@ const Service = () => {
         </h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-8">
-        {
-          services?.map((service, index)=>{
-            const {title, description, path} = service;
-            return <div key={index} className="w-full flex justify-center border border-solid border-gray-300 shadow-xl rounded-md p-8">
-            <div className="text-center">
-              <div className="h-14 w-14 rounded-full bg-slate-400 flex justify-center items-center mx-auto">
-                <h1 className="text-4x">0{index+1}</h1>
+        {services?.map((service, index) => {
+          const { title, description, path } = service;
+          return (
+            <div
+              key={index}
+              className="w-full flex justify-center border border-solid border-gray-300 shadow-xl rounded-md p-8 hover:scale-105 transition duration-300"
+            >
+              <div className="text-center">
+                <div className="h-16 w-16 rounded-full accent-color text-white flex justify-center items-center mx-auto">
+                  <h1 className="text-4xl">0{index + 1}</h1>
+                </div>
+                <h2 className="mt-6 mb-3">{title}</h2>
+                <p className="mb-4">{description}</p>
+                <MainButton
+                  name="Check Details"
+                  link={`/category/${path}`}
+                  style="py-[2px] px-2 text-base border-gray-500 text-black"
+                />
               </div>
-              <h2 className="mt-6 mb-3">{title}</h2>
-              <p className="mb-4">{description}</p>
-              <MainButton 
-              name='Check Details' 
-              link={`/category/${path}`}
-              style="py-[2px] px-2 text-lg border-black text-black"
-              />
             </div>
-          </div>
-          })
-        }
+          );
+        })}
       </div>
     </div>
   );

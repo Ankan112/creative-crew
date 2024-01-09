@@ -39,10 +39,11 @@ body{
 }
 
 .bg-primary{
-    background-color: #FED6DE;
+    background-color: #d2c3d4;
 }
 .bg-secondary{
-    background-color: #FFF0F0;
+    /* background-color: #FFF0F0; */
+    background-color: #f5d7d7;
 }
 .accent-color{
     background-color: #835858;
@@ -55,7 +56,7 @@ body{
     bottom: 20px;
     right: 20px;
     padding: 10px 20px;
-    background-color: black;
+    background-color: #463333;
     color: #fff;
     border: none;
     border-radius: 4px;

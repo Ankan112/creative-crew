@@ -12,7 +12,7 @@ const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <>
-      <div className="bg-primary">
+      <div className="bg-secondary bg-opacity-60">
         <footer className="main-container relative text-primary pt-8 pb-6">
           <div className="container mx-auto">
             <div className="flex flex-wrap text-left gap-y-5 lg:text-left">

@@ -5,7 +5,7 @@ const MainButton = ({ link, name, style }) => {
     <div>
       <Link href={link}>
         <button
-          className={`${style} font-main border-2 border-solid bg-transparent cursor-pointer hover:bg-[#FED6DE] hover:border-[#FED6DE] rounded hover:text-[#463333] duration-500`}
+          className={`${style} font-main border-2 border-solid bg-transparent cursor-pointer hover:bg-[#835858] hover:border-[#835858] rounded hover:text-white duration-500`}
         >
           {name}
         </button>
