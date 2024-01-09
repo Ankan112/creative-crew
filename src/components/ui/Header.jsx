@@ -98,7 +98,11 @@ const Header = () => {
                   <>
                     <MainButton
                       name="Dashboard"
-                      link="/dashboard"
+                      link={`${
+                        data.email === "admin@admin.com"
+                          ? "/dashboard"
+                          : "/dashboard/user-profile"
+                      }`}
                       style="py-1 px-4 text-base"
                     />
                     <Tooltip placement="bottomRight" title="Logout">
