@@ -33,10 +33,10 @@ const LoginPage = () => {
   return (
     <>
       {contextHolder}
-      <div className="bg-gray-200">
+      <div className="bg-[url('/auth.webp')] bg-no-repeat bg-cover">
         <Header />
         <div className="flex relative justify-center items-center h-screen">
-          <AuthCredential/>
+          <AuthCredential />
           <div className="w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
             <div className="px-6 py-4">
               <h3 className="mt-3 text-xl font-medium text-center text-gray-600 dark:text-gray-200">
