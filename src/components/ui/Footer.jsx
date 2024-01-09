@@ -7,6 +7,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import Link from "next/link";
 import ScrollToTopButton from "../shared/ScrollToTopButton";
 import Image from "next/image";
+import paymentImage from "../../../public/payment.png";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -149,12 +150,7 @@ const Footer = () => {
                     We Accept
                   </span>
                   <div className="w-full">
-                    <Image
-                      src={"/payment.png"}
-                      height={150}
-                      width={320}
-                      alt="paymentImage"
-                    ></Image>
+                    <Image src={paymentImage} alt="paymentImage"></Image>
                   </div>
                 </div>
               </div>
