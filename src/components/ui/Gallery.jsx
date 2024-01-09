@@ -9,6 +9,8 @@ import g7 from "../../../public/gallery/g7.jpg";
 import g8 from "../../../public/gallery/g8.jpg";
 import g9 from "../../../public/gallery/g9.jpg";
 import Image from "next/image";
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 
 const Gallery = () => {
   const elements = [
@@ -60,7 +62,6 @@ const Gallery = () => {
       <Row gutter={[12, 6]} className="mt-10">
         {elements?.map((data, index) => (
           <Col
-            className=""
             key={index}
             xs={24}
             sm={24}
@@ -68,14 +69,16 @@ const Gallery = () => {
             lg={data.col}
             span={data.col}
           >
-            <Image
-              className=" w-full"
-              src={data.url}
-              alt="wedding-image"
-              height={380}
-              width={280}
-              responsive="true"
-            ></Image>
+            <Zoom>
+              <Image
+                className="w-full"
+                src={data.url}
+                alt="wedding-image"
+                height={380}
+                width={280}
+                responsive="true"
+              ></Image>
+            </Zoom>
           </Col>
         ))}
       </Row>
