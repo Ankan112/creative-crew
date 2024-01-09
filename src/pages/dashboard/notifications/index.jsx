@@ -6,10 +6,10 @@ const Notifications = () => {
   return (
     <div className="mx-auto main-container">
       <div className="my-10">
-        <h1 className="font-main">Create Notifaction</h1>
-        <TitleBorder/>
-        </div>
-      <NotifictionForm/>
+        <h1 className="font-main">Create Notification</h1>
+        <TitleBorder />
+      </div>
+      <NotifictionForm />
     </div>
   );
 };

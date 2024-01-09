@@ -8,7 +8,7 @@ import TitleBorder from "@/components/shared/TitleBorder";
 const ReachableContext = createContext(null);
 const UnreachableContext = createContext(null);
 const config = {
-  title: 'Delete Service!',
+  title: "Delete Service!",
   content: (
     <>
       <p>Are you sure? You want to delete this service.</p>
@@ -82,22 +82,24 @@ const Services = () => {
       <ReachableContext.Provider value="Light">
         {contextHolder}
         <div className="h-screen main-container">
-        <div className="my-10">
-        <h1 className="font-main">All Services</h1>
-        <TitleBorder/>
-        </div>
+          <div className="my-10">
+            <h1 className="font-main">All Services</h1>
+            <TitleBorder />
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8">
-            {
-              services?.map((service, index) => {
-                const { title } = service;
-                return <div key={index} className="w-full flex justify-center border border-solid border-gray-300 shadow-xl rounded-md p-8">
+            {services?.map((service, index) => {
+              const { title } = service;
+              return (
+                <div
+                  key={index}
+                  className="w-full flex justify-center border border-solid border-gray-300 shadow-xl rounded-md p-8"
+                >
                   <div className="text-center">
-                    <div className="h-14 w-14 rounded-full bg-slate-400 flex justify-center items-center mx-auto">
-                      <h1 className="text-4x">0{index + 1}</h1>
+                    <div className="h-16 w-16 rounded-full accent-color text-white flex justify-center items-center mx-auto">
+                      <h1 className="text-3xl">0{index + 1}</h1>
                     </div>
                     <h2 className="mt-6 mb-3">{title}</h2>
                     <div className="flex gap-5 justify-center mt-5">
-
                       <Space
                         onClick={showModal}
                         type="dashed"
@@ -110,7 +112,7 @@ const Services = () => {
                       <Space
                         onClick={async () => {
                           const confirmed = await Modal.confirm(config);
-                          console.log('Confirmed: ', confirmed);
+                          console.log("Confirmed: ", confirmed);
                         }}
                         type="dashed"
                         className="cursor-pointer py-1 px-2 rounded bg-red-600 text-white"
@@ -122,12 +124,12 @@ const Services = () => {
                     </div>
                   </div>
                 </div>
-              })
-            }
+              );
+            })}
           </div>
         </div>
         <MainModal
-          title={'Edit Service'}
+          title={"Edit Service"}
           isModalOpen={isModalOpen}
           handleCancel={handleCancel}
           handleOk={handleOk}
