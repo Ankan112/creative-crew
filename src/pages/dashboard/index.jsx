@@ -5,7 +5,7 @@ import { FaUsers } from "react-icons/fa6";
 import { IoMdArrowRoundUp } from "react-icons/io";
 import { BiSolidHappyAlt } from "react-icons/bi";
 import { MdOutlineIncompleteCircle } from "react-icons/md";
-
+import CountUp from "react-countup";
 import React from "react";
 
 const Dashboard = () => {
@@ -22,7 +22,9 @@ const Dashboard = () => {
           <FaUsers color="#835858" size={48} />
 
           <p className="text-xl font-medium">Registered Users</p>
-          <h2 className="text-3xl">82890+</h2>
+          <h2 className="text-3xl">
+            <CountUp delay={0.75} end={82890} />+
+          </h2>
         </div>
         <div className="px-5 py-10 relative text-center rounded bg-gray-100 shadow-md border border-solid border-gray-200">
           <span className="absolute text-green-600 top-6 right-5 text-lg font-bold ">
@@ -32,7 +34,9 @@ const Dashboard = () => {
           <MdOutlineIncompleteCircle color="#835858" size={48} />
 
           <p className="text-xl font-medium">Complete Order</p>
-          <h2 className="text-3xl">27530+</h2>
+          <h2 className="text-3xl">
+            <CountUp delay={0.75} end={27530} />+
+          </h2>
         </div>
         <div className="px-5 py-10 relative text-center rounded bg-gray-100 shadow-md border border-solid border-gray-200">
           <span className="absolute text-green-600 top-6 right-5 text-lg font-bold ">
@@ -41,7 +45,9 @@ const Dashboard = () => {
           </span>
           <BiSolidHappyAlt color="#835858" size={48} />
           <p className="text-xl font-medium">Happy Clients</p>
-          <h2 className="text-3xl">22540+</h2>
+          <h2 className="text-3xl">
+            <CountUp delay={0.75} end={22540} />+
+          </h2>
         </div>
       </div>
       <div className="mt-10">
