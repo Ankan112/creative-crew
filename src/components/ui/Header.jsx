@@ -1,5 +1,5 @@
 import { getUser } from "@/constant";
-import { Button, Tooltip } from "antd";
+import { Badge, Button, Tooltip } from "antd";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -18,12 +18,11 @@ const Header = () => {
   };
 
   const handleSignOut = () => {
-    router.push('/')
+    router.push("/");
     localStorage.removeItem("user");
     // window.location.reload();
   };
   const data = getUser();
-
 
   return (
     <div
@@ -77,14 +76,17 @@ const Header = () => {
                 >
                   <p className="">Contact Us</p>
                 </Link>
-                {
-                  !!data?.email === true && !(data?.email == 'admin@admin.com') && <Link
-                  href="/"
-                  className="hover:underline font-medium duration-200 mr-5 px-2 py-2 rounded text-black no-underline"
-                >
-                  <p className="">Notification</p>
-                </Link>
-                }
+                {!!data?.email === true &&
+                  !(data?.email == "admin@admin.com") && (
+                    <Link
+                      href="/"
+                      className="hover:underline font-medium duration-200 mr-5 px-2 py-2 rounded text-black no-underline"
+                    >
+                      <Badge count={0} showZero>
+                        <p className="">Notification</p>
+                      </Badge>
+                    </Link>
+                  )}
                 {!data?.email && (
                   <MainButton
                     name="Login"
@@ -108,7 +110,7 @@ const Header = () => {
                       </button>
                     </Tooltip>
                   </>
-                )}             
+                )}
               </div>
             </div>
           </div>
