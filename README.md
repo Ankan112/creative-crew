@@ -2,6 +2,14 @@
 
 A photography service offers professional photography expertise to capture moments, events, or subjects through the lens of a skilled photographer!
 
+
+## User Login:
+
+```
+email:user@gmail.com
+password:123456
+```
+
 ## Admin Login:
 
 ```
