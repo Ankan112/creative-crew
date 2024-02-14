@@ -7,7 +7,7 @@ A photography service offers professional photography expertise to capture momen
 
 ```
 email:user@gmail.com
-password:123456
+password:12345678
 ```
 
 ## Admin Login:
